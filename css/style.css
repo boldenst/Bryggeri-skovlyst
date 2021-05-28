@@ -216,7 +216,235 @@ body {
 
 
 /* Buttons styling start ---------------------------------*/
+.btn__global-styling {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #fff;
+    border: none;
+    outline: 0.1rem solid #880005;
+    cursor: pointer;
+}
 
+.btn__leaf-container {
+    width: 3.5rem;
+    height: 2.5rem;
+    float: right;
+    background-color: #880005;
+}
+
+.btn__leaf {
+    margin: 0.7rem;
+}
+
+.btn__text-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.btn__text {
+    color: #880005;
+}
+
+.btn__global-styling:hover .btn__text-container {
+    background-color: #880005;
+}
+
+.btn__global-styling:hover .btn__text-container .btn__text {
+    color: #fff;
+}
+
+.btn__global-styling-gold {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #fff;
+    border: none;
+    outline: 0.1rem solid #c8a374;
+    cursor: pointer;
+}
+
+.btn__leaf-container-gold {
+    width: 3.5rem;
+    height: 2.5rem;
+    float: right;
+    background-color: #c8a374;
+}
+
+.btn__leaf-gold {
+    margin: 0.7rem;
+}
+
+.btn__text-container-gold {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.btn__text-gold {
+    color: #c8a374;
+}
+
+.btn__global-styling-gold:hover .btn__text-container-gold {
+    background-color: #c8a374;
+}
+
+.btn__global-styling-gold:hover .btn__text-container-gold .btn__text-gold {
+    color: #fff;
+}
+
+.btn-red__global-styling {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 10rem;
+    height: 2rem;
+    background-color: #880005;
+    border: none;
+    outline: 0.1rem solid #880005;
+    cursor: pointer;
+}
+
+.btn-red__global-styling--gold {
+    background-color: #fff;
+    outline: 0.1rem solid #c8a374;
+}
+
+.btn-red__text-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.btn-red__text {
+    color: #fff;
+}
+
+.btn-red__text--gold {
+    color: #c8a374;
+}
+
+.btn-red__arrow-container {
+    width: 3rem;
+    height: 2rem;
+    float: right;
+    background-color: #880005;
+}
+
+.btn-red__arrow-container--gold {
+    width: 3rem;
+    height: 2rem;
+    float: right;
+    background-color: #fff;
+}
+
+.btn-red__arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* animation-name: arrow-rotate-counter-clockwise; */
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes arrow-rotate-counter-clockwise {
+    from {
+        transform: rotate(90deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.btn-red__arrow::before {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 0.2rem;
+    background-color: white;
+    transform: rotate(45deg);
+    margin-top: 0.7rem;
+    margin-left: 0.25rem;
+}
+
+.btn-red__arrow::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 0.2rem;
+    background-color: white;
+    transform: rotate(-45deg);
+    margin-top: 1.225rem;
+    margin-left: 0.25rem;
+}
+
+.btn-red__arrow--gold {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    animation-name: arrow-rotate-clockwise;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes arrow-rotate-clockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+.btn-red__arrow--gold::before {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 0.2rem;
+    background-color: #c8a374;
+    transform: rotate(45deg);
+    margin-top: 0.7rem;
+    margin-left: 0.25rem;
+}
+
+.btn-red__arrow--gold::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 0.2rem;
+    background-color: #c8a374;
+    transform: rotate(-45deg);
+    margin-top: 1.225rem;
+    margin-left: 0.25rem;
+}
+
+.unfold__global {
+    display: none;
+    margin-top: 1rem;
+    width: 40rem;
+    height: 30rem;
+    outline: 0.1rem solid #c8a374;
+}
+
+.unfold__global--show {
+    display: block;
+}
 
 /* Buttons styling end -----------------------------------*/
 
