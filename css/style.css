@@ -139,6 +139,38 @@ body {
     top: 1rem;
 }
 
+.burger-close__icon {
+    display: flex;
+    right: 1rem;
+    top: 1rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.burger-close__icon::before {
+    content: '';
+    position: absolute;
+    margin-top: 1.5rem;
+    margin-left: 0.25rem;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: var(--color-white);
+    transform: rotate(45deg);
+    border-radius: 0.5rem;
+}
+
+.burger-close__icon::after {
+    content: '';
+    position: absolute;
+    margin-top: 1.5rem;
+    margin-left: 0.25rem;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: var(--color-white);
+    transform: rotate(-45deg);
+    border-radius: 0.5rem;
+}
+
 .burger-menu-nav {
 
 }
