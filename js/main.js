@@ -15,3 +15,10 @@ $("#burger-close").click(function(){
       $('.btn-red__arrow').toggleClass('btn-red__arrow--gold')
     });
 });
+
+
+$(document).ready(function() {
+    $('.faq-button').click(function() {
+      $('.faq-container').toggleClass('unfold-faq')
+    });
+});
