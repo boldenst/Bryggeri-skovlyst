@@ -96,6 +96,23 @@ body {
 
 /* Header styling end -----------------------------------*/
 
+/* HERO styling start------------------------------------*/
+
+.header-spacer-global {
+    height: 1px;
+    width: 100vw;
+    margin-bottom: 4.95rem;
+}
+
+.hero-image-global {
+    height: 14.6rem;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: 130%;
+    margin-bottom: 2.5rem;
+}
+
+/* HERO styling end------------------------------------*/
 
 
 /* Aside styling start ---------------------------------*/
@@ -213,6 +230,45 @@ body {
 
 /* Menu styling end -----------------------------------*/
 
+/* Global Text styling start -------------------------------- */
+ 
+.main-heading-global {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: var(--color-black);
+ }
+
+.sub-heading-global {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-size: 1.35rem;
+    color: var(--color-black);
+}
+
+.heading-underline {
+    height: 3px;
+    background-color: var(--color-secondary);
+    width: 4rem;
+    margin-bottom: 0.6rem;
+}
+
+.main-text-global {
+    color: var(--color-black);
+    font-family: var(--font-text);
+    font-size: 1.1rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.menus-heading-global {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/* Text styling end*/
 
 
 /* Buttons styling start ---------------------------------*/
@@ -308,10 +364,11 @@ body {
     justify-content: space-between;
     width: 10rem;
     height: 2rem;
-    background-color: #880005;
+    background-color: var(--color-primary);
     border: none;
-    outline: 0.1rem solid #880005;
+    outline: 0.1rem solid var(--color-primary);
     cursor: pointer;
+    font-family: var(--font-heading);
 }
 
 .btn-red__global-styling--gold {
@@ -614,6 +671,97 @@ footer {
 
 
 /* Kontakt og info styling start */
+
+.contact-hero-image {
+    background-image: url(../images/bryggeri-skovlyst.jpg);
+}
+
+.contact-grid-container {
+    margin: 0 2rem;
+    display: grid;
+    row-gap: 4rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "intro intro intro intro"
+    "hours hours hours hours"
+    "general general general general"
+    "giftcard giftcard giftcard giftcard"
+    "job job job job";
+}
+
+.contact-grid-container__intro {
+    grid-area: intro;
+}
+
+.contact-grid-container__contact {
+    grid-area: general;
+}
+
+.contact-mail-container, .contact-phone-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.contact-mail-container__img, .contact-phone-container__img {
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.contact-grid-container__hours {
+    grid-area: hours;
+}
+
+.contact-grid-container__giftcard {
+    grid-area: giftcard;
+}
+
+.contact-grid-container__job {
+    grid-area: job;
+}
+
+.contact-faq {
+    margin: 4rem 2rem 0 2rem;
+}
+
+.faq-container {
+    height: 27rem;
+    overflow: hidden;
+}
+
+.faq-container__faq {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-heading {
+    margin: 1.5rem 0 0.7rem 0;
+}
+
+.faq-button {
+    margin: 1.5rem auto;
+    font-size: 1rem;
+    padding: 0.5em 1.4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    border: none;
+    outline: 0.1rem solid var(--color-primary);
+    cursor: pointer;
+    font-family: var(--font-heading);
+    color: var(--color-white);
+}
+
+.unfold-faq {
+    height: auto;
+}
+
+.less-faqs {
+    display: none;
+}
 
 /* Kontakt og info styling end */
 
