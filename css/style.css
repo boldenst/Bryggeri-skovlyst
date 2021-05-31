@@ -669,7 +669,6 @@ footer {
 /* Buffet styling end */
 
 
-
 /* Kontakt og info styling start */
 
 .contact-hero-image {
@@ -768,6 +767,18 @@ footer {
 
 
 /* Vores historie styling start */
+.history-hero-image {
+    background-image: url(../images/bryggeri-skovlyst.jpg);
+}
+
+.history-container__image {
+    width: 100%;
+    margin: 2.3rem 0;
+}
+
+.history__container {
+    margin: 0 2rem 0 2rem;
+}
 
 /* Vores historie styling end */
 
@@ -982,6 +993,48 @@ footer {
 
 
 /* Vores historie styling start */
+.history-hero-image {
+    background-image: url(../images/bryggeri-skovlyst.jpg);
+}
+
+.history-container__image {
+    grid-area: img;
+    width: 100%;
+    margin: 2.3rem 0;
+}
+
+.history__container {
+    margin: 0 0rem 0 19rem;
+    width: calc(100vw - 19rem);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". heading heading heading heading heading heading . . . . ."
+    ". underline underline underline underline underline underline . . . . ."
+    ". vision vision vision vision . img img img img img ."
+    ". history history history history . img img img img img ."
+    ". history history history history . . . . . . ."
+    ;
+}
+
+.history-container__heading {
+    grid-area: heading;
+}
+
+.history-container__underline {
+    grid-area: underline;
+}
+
+.history-container__vision {
+    grid-area: vision;
+    margin-bottom: 2.3rem;
+}
+
+.history-container__history {
+    grid-area: history;
+}
+
 
 /* Vores historie styling end */
 
