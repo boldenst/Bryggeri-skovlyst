@@ -639,6 +639,82 @@ footer {
 .text--white {
     color: #fff;
     font-size: 1rem;
+    padding: 0 2rem;
+}
+
+.main-container {
+    margin: 0 2rem;
+}
+
+.main__image{
+    width: 100%;
+    height: auto;
+    margin-bottom: -3rem;
+}
+
+.btn__global-styling--center {
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+.main__wrapper {
+    margin-top: 4rem;
+    display: grid;
+    row-gap: 4rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "img img img img"
+    "info info info info"
+    ;
+}
+
+.main__info-about-image {
+    grid-area: img;
+}
+
+.main__info-about {
+    grid-area: info;
+}
+
+.main__info-menu-image {
+    grid-area: img;
+}
+
+.main__info-menu {
+    grid-area: info;
+}
+
+.main__info-beer-image{
+    grid-area: img;
+}
+
+.main__info-beer {
+    grid-area: info;
+}
+
+.main__info-party-image {
+    grid-area: img;
+}
+
+.main__info-party {
+    grid-area: info;
+}
+
+.main__info-meeting-image {
+    grid-area: img;
+}
+
+.main__info-meeting {
+    grid-area: info;
+}
+
+.main__info-event-image {
+    grid-area: img;
+}
+
+.main__info-event {
+    grid-area: info;
 }
 
 /* Forside styling end */
