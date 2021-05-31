@@ -1015,6 +1015,113 @@ footer {
 
 
 /* Forside styling start */
+.main-container {
+    width: calc(100vw - 19rem);
+    margin-left: 19rem;
+}
+
+.text-centered {
+    text-align: left;
+    margin-left: 25rem;
+    width: 25rem;
+}
+
+.text--white {
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.main__image{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.main__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15rem;
+    margin-left: 2rem;
+}
+
+.btn__global-styling--center {
+    margin: 0;
+    position: relative;
+    top: 1.6rem;
+}
+
+.main__wrapper {
+    margin-top: 8rem;
+    display: grid;
+    row-gap: 4rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". img img img img info info info info info . ."
+    ". info-rev info-rev info-rev info-rev info-rev . img-rev img-rev img-rev img-rev ."
+    ;
+}
+
+.main__wrapper--mtop {
+    margin-top: 4rem;
+}
+
+.main__wrapper--reverse {
+    margin: 0;
+}
+
+.main__wrapper--reverse {
+    margin-top: 4rem;
+}
+
+.main__info-about-image {
+    grid-area: img;
+}
+
+.main__info-about {
+    grid-area: info;
+}
+
+.main__info-menu-image {
+    grid-area: img-rev;
+}
+
+.main__info-menu {
+    grid-area: info-rev;
+}
+
+.main__info-beer-image{
+    grid-area: img;
+}
+
+.main__info-beer {
+    grid-area: info;
+}
+
+.main__info-party-image {
+    grid-area: img-rev;
+}
+
+.main__info-party {
+    grid-area: info-rev;
+}
+
+.main__info-meeting-image {
+    grid-area: img;
+}
+
+.main__info-meeting {
+    grid-area: info;
+}
+
+.main__info-event-image {
+    grid-area: img-rev;
+}
+
+.main__info-event {
+    grid-area: info-rev;
+}
 
 /* Forside styling end */
 
