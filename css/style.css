@@ -728,6 +728,151 @@ footer {
 
 
 /* Øl styling start */
+.oel-hero-image {
+    background-image: url(../images/oel-hero.jpg);
+}
+
+.oel-container {
+    margin: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "heading heading heading heading"
+    "underline underline underline underline"
+    "intro intro intro intro"
+    "togo togo togo togo"
+    "selection selection selection selection"
+    "size size size size"
+    "menu menu menu menu"
+    "brygstuen brygstuen brygstuen brygstuen"
+    ;
+}
+
+.oel-container__heading {
+    grid-area: heading;
+}
+
+.oel-container__underline {
+    grid-area: underline;
+}
+
+.oel-container__intro {
+    grid-area: intro;
+    margin-bottom: 1.8rem;
+}
+
+.oel-container__togo {
+    grid-area: togo;
+    margin-bottom: 1.8rem;
+}
+
+.oel-container__selection {
+    grid-area: selection;
+    text-align: center;
+}
+
+.oel-container-menucard__size {
+    grid-area: size;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.oel-container-menucard__size > p {
+    margin-top: 1rem;
+}
+
+.oel-container__menucard {
+    grid-area: menu;
+    border: 0.2rem solid var(--color-secondary);
+    padding: 0.7rem 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "hejren"
+    "raadyret"
+    "egernet"
+    "baeveren"
+    "svanen"
+    "raeven"
+    "uglen"
+    "storken"
+    "guldsmeden"
+    "button"
+    ;
+}
+
+.oel-container-menucard__heading {
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+}
+
+.oel-container-menucard__subheading {
+    font-family: var(--font-heading);
+    color: var(--color-black);
+}
+
+.oel-container-menucard__text {
+    font-family: var(--font-text);
+    color: var(--color-black);
+}
+
+.oel-container-menucard__hejren {
+    grid-area: hejren;
+}
+
+.oel-container-menucard__raadyret {
+    grid-area: raadyret;
+}
+
+.oel-container-menucard__egernet {
+    grid-area: egernet;
+}
+
+.oel-container-menucard__baeveren {
+    grid-area: baeveren;
+}
+
+.oel-container-menucard__svanen {
+    grid-area: svanen;
+}
+
+.oel-container-menucard__raeven {
+    grid-area: raeven;
+}
+
+.oel-container-menucard__uglen {
+    grid-area: uglen;
+}
+
+.oel-container-menucard__storken {
+    grid-area: storken;
+}
+
+.oel-container-menucard__guldsmeden {
+    grid-area: guldsmeden;
+}
+
+.oel-container-menucard__button {
+    grid-area: button;
+    margin: 1rem auto;
+}
+
+.oel-container__brygstuen {
+    grid-area: brygstuen;
+}
+
+.oel-container-brygstuen__img {
+    width: 100%;
+    margin: 3rem 0 1rem 0;
+}
+
+.oel-container__menucard > div {
+    margin: 1rem 0;
+}
 
 /* Øl styling end */
 
@@ -760,7 +905,6 @@ footer {
 /* Buffet styling start */
 
 /* Buffet styling end */
-
 
 
 /* Kontakt og info styling start */
@@ -861,6 +1005,18 @@ footer {
 
 
 /* Vores historie styling start */
+.history-hero-image {
+    background-image: url(../images/bryggeri-skovlyst.jpg);
+}
+
+.history-container__image {
+    width: 100%;
+    margin: 2.3rem 0;
+}
+
+.history__container {
+    margin: 0 2rem 0 2rem;
+}
 
 /* Vores historie styling end */
 
@@ -1141,6 +1297,158 @@ footer {
 
 /* Øl styling start */
 
+.oel-hero-image {
+    background-image: url(../images/oel-hero.jpg);
+}
+
+.oel-container {
+    width: calc(100vw - 19rem);
+    margin: 0 0 0 19rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". heading heading . . . . . . . . ."
+    ". underline underline . . . . . . . . ."
+    ". intro intro intro intro intro . . . . . ."
+    ". togo togo togo togo togo togo . . . . ."
+    ". selection selection . . . . . . . . ."
+    ". . . size size size size size size . . ."
+    ". menu menu menu menu menu menu menu menu menu menu ."
+    ". brygstuen brygstuen brygstuen brygstuen brygstuen brygstuen brygstuen brygstuen brygstuen brygstuen ."
+    ;
+}
+
+.oel-container__heading {
+    grid-area: heading;
+}
+
+.oel-container__underline {
+    grid-area: underline;
+}
+
+.oel-container__intro {
+    grid-area: intro;
+    margin-bottom: 1.8rem;
+}
+
+.oel-container__togo {
+    grid-area: togo;
+    margin-bottom: 1.8rem;
+}
+
+.oel-container__selection {
+    grid-area: selection;
+    text-align: left;
+}
+
+.oel-container-menucard__size {
+    grid-area: size;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 3rem 0 1rem 0;
+}
+
+.oel-container-menucard__size > p {
+    margin-top: 1rem;
+}
+
+.oel-container__menucard {
+    grid-area: menu;
+    border: 0.2rem solid var(--color-secondary);
+    padding: 0.7rem 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". . hejren hejren hejren hejren hejren hejren hejren . ."
+    ". . raadyret raadyret raadyret . egernet egernet egernet . ."
+    ". . baeveren baeveren baeveren . svanen svanen svanen . ."
+    ". . raeven raeven raeven . uglen uglen uglen . ."
+    ". . storken storken storken . guldsmeden guldsmeden guldsmeden . ."
+    ". . . . . . . . button button ."
+    ;
+}
+
+.oel-container-menucard__heading {
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+}
+
+.oel-container-menucard__subheading {
+    font-family: var(--font-heading);
+    color: var(--color-black);
+}
+
+.oel-container-menucard__text {
+    font-family: var(--font-text);
+    color: var(--color-black);
+}
+
+.oel-container-menucard__hejren {
+    grid-area: hejren;
+}
+
+.oel-container-menucard__raadyret {
+    grid-area: raadyret;
+}
+
+.oel-container-menucard__egernet {
+    grid-area: egernet;
+}
+
+.oel-container-menucard__baeveren {
+    grid-area: baeveren;
+}
+
+.oel-container-menucard__svanen {
+    grid-area: svanen;
+}
+
+.oel-container-menucard__raeven {
+    grid-area: raeven;
+}
+
+.oel-container-menucard__uglen {
+    grid-area: uglen;
+}
+
+.oel-container-menucard__storken {
+    grid-area: storken;
+}
+
+.oel-container-menucard__guldsmeden {
+    grid-area: guldsmeden;
+}
+
+.oel-container-menucard__button {
+    grid-area: button;
+    margin: 1rem auto;
+}
+
+.oel-container__brygstuen {
+    grid-area: brygstuen;
+    display: flex;
+    margin-top: 5rem;
+}
+
+.oel-container-brygstuen__info {
+    margin-left: 5rem;
+    margin-right: 0;
+}
+
+.oel-container-brygstuen__img {
+    width: 50%;
+    margin: 0;
+}
+
+.oel-container__menucard > div {
+    margin: 1rem 0;
+}
+
 /* Øl styling end */
 
 
@@ -1182,6 +1490,48 @@ footer {
 
 
 /* Vores historie styling start */
+.history-hero-image {
+    background-image: url(../images/bryggeri-skovlyst.jpg);
+}
+
+.history-container__image {
+    grid-area: img;
+    width: 100%;
+    margin: 2.3rem 0;
+}
+
+.history__container {
+    margin: 0 0rem 0 19rem;
+    width: calc(100vw - 19rem);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". heading heading heading heading heading heading . . . . ."
+    ". underline underline underline underline underline underline . . . . ."
+    ". vision vision vision vision . img img img img img ."
+    ". history history history history . img img img img img ."
+    ". history history history history . . . . . . ."
+    ;
+}
+
+.history-container__heading {
+    grid-area: heading;
+}
+
+.history-container__underline {
+    grid-area: underline;
+}
+
+.history-container__vision {
+    grid-area: vision;
+    margin-bottom: 2.3rem;
+}
+
+.history-container__history {
+    grid-area: history;
+}
+
 
 /* Vores historie styling end */
 
