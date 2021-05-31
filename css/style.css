@@ -623,6 +623,23 @@ footer {
 /* Blomster styling end */
 
 /* Forside styling start */
+.main-hero-image {
+    background-color: pink;
+    padding-top: 2rem;
+}
+
+.text-centered {
+    text-align: center;
+}
+
+.heading--white {
+    color: #fff;
+}
+
+.text--white {
+    color: #fff;
+    font-size: 1rem;
+}
 
 /* Forside styling end */
 
