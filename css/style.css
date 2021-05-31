@@ -1,0 +1,846 @@
+/* Global settings */
+:root {
+    --color-primary: #880005;
+    --color-secondary: #C8A374;
+    --color-third: #5A5A5A;
+    --color-black: #040404;
+    --color-white: #fcfcfc;
+    --font-heading: ff-meta-serif-web-pro;
+    --font-text: proxima-nova;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    z-index: 1;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family : "proxima-nova";
+    src : url("https://use.typekit.net/af/d45b9a/000000000000000077359577/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/d45b9a/000000000000000077359577/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/d45b9a/000000000000000077359577/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display : auto;
+    font-style : normal;
+    font-weight : 400;
+}
+
+@font-face {
+    font-family : "ff-meta-serif-web-pro";
+    src : url("https://use.typekit.net/af/7ed1f6/0000000000000000773599aa/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/7ed1f6/0000000000000000773599aa/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/7ed1f6/0000000000000000773599aa/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-display : auto;
+    font-style : normal;
+    font-weight : 700;
+}
+
+@font-face {
+    font-family : "ff-meta-serif-web-pro";
+    src : url("https://use.typekit.net/af/3058a4/0000000000000000773599a9/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff2"), url("https://use.typekit.net/af/3058a4/0000000000000000773599a9/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("woff"), url("https://use.typekit.net/af/3058a4/0000000000000000773599a9/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3") format("opentype");
+    font-display : auto;
+    font-style : normal;
+    font-weight : 500;
+}
+
+@font-face {
+    font-family : "ff-meta-serif-web-pro";
+    src : url("https://use.typekit.net/af/c00e0b/0000000000000000773599ad/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"), url("https://use.typekit.net/af/c00e0b/0000000000000000773599ad/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"), url("https://use.typekit.net/af/c00e0b/0000000000000000773599ad/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
+    font-display : auto;
+    font-style : normal;
+    font-weight : 600;
+}
+
+/* Header styling start ---------------------------------*/
+
+.mobile__header {
+    width: 100vw;
+    height: 5rem;
+    background-color: var(--color-primary);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+
+.mobile-header__logo {
+    align-self: center;
+    justify-self: center;
+    width: 12rem;
+    margin: 0 auto;
+}
+
+.mobile-header__burger-container {
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 2.67rem;
+    position: absolute;
+    right: 1rem;
+    top: 1.3rem;
+}
+
+.mobile-header__burger-line {
+    background-color: white;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+}
+
+/* Header styling end -----------------------------------*/
+
+
+
+/* Aside styling start ---------------------------------*/
+.desktop__aside {
+    display: none;
+}
+
+/* Aside styling end -----------------------------------*/
+
+
+
+/* Menu styling start ---------------------------------*/
+
+.burger-menu {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    left: 100vw;
+    top: 0;
+    transition: 0.5s;
+    z-index: 11;
+}
+
+.burger-menu--show {
+    left: 0vw;
+    transition: 0.5s;
+}
+
+.burger-menu-logo {
+
+}
+
+#burger-close {
+    color: var(--color-white);
+    font-size: 3rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.burger-close__icon {
+    display: flex;
+    right: 1rem;
+    top: 1rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.burger-close__icon::before {
+    content: '';
+    position: absolute;
+    margin-top: 1.5rem;
+    margin-left: 0.25rem;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: var(--color-white);
+    transform: rotate(45deg);
+    border-radius: 0.5rem;
+}
+
+.burger-close__icon::after {
+    content: '';
+    position: absolute;
+    margin-top: 1.5rem;
+    margin-left: 0.25rem;
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: var(--color-white);
+    transform: rotate(-45deg);
+    border-radius: 0.5rem;
+}
+
+.burger-menu-nav {
+
+}
+
+.burger-menu__nav-list {
+    display: flex;
+    flex-direction: column;    
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    height: 50vh;
+    margin-top: 2rem;
+}
+
+.burger-menu__nav__list-item, .burger-menu-booking {
+    font-family: var(--font-text);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.burger-menu__nav__list-item--current {
+}
+
+.burger-menu__nav__list__link, .burger-menu-booking {
+    color: var(--color-white);
+}
+
+.burger-menu__nav__list__link--current {
+    color: var(--color-secondary);
+}
+
+
+.burger-menu-booking {
+    margin: 4rem auto 0 auto;
+    text-align: center;
+    font-weight: 700;
+} 
+
+
+/* Menu styling end -----------------------------------*/
+
+
+
+/* Buttons styling start ---------------------------------*/
+.btn__global-styling {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #fff;
+    border: none;
+    outline: 0.1rem solid #880005;
+    cursor: pointer;
+}
+
+.btn__leaf-container {
+    width: 3.5rem;
+    height: 2.5rem;
+    float: right;
+    background-color: #880005;
+}
+
+.btn__leaf {
+    margin: 0.7rem;
+}
+
+.btn__text-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.btn__text {
+    color: #880005;
+}
+
+.btn__global-styling:hover .btn__text-container {
+    background-color: #880005;
+}
+
+.btn__global-styling:hover .btn__text-container .btn__text {
+    color: #fff;
+}
+
+.btn__global-styling-gold {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #fff;
+    border: none;
+    outline: 0.1rem solid #c8a374;
+    cursor: pointer;
+}
+
+.btn__leaf-container-gold {
+    width: 3.5rem;
+    height: 2.5rem;
+    float: right;
+    background-color: #c8a374;
+}
+
+.btn__leaf-gold {
+    margin: 0.7rem;
+}
+
+.btn__text-container-gold {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.btn__text-gold {
+    color: #c8a374;
+}
+
+.btn__global-styling-gold:hover .btn__text-container-gold {
+    background-color: #c8a374;
+}
+
+.btn__global-styling-gold:hover .btn__text-container-gold .btn__text-gold {
+    color: #fff;
+}
+
+.btn-red__global-styling {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 10rem;
+    height: 2rem;
+    background-color: #880005;
+    border: none;
+    outline: 0.1rem solid #880005;
+    cursor: pointer;
+}
+
+.btn-red__global-styling--gold {
+    background-color: #fff;
+    outline: 0.1rem solid #c8a374;
+}
+
+.btn-red__text-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.btn-red__text {
+    color: #fff;
+}
+
+.btn-red__text--gold {
+    color: #c8a374;
+}
+
+.btn-red__arrow-container {
+    width: 3rem;
+    height: 2rem;
+    float: right;
+    background-color: #880005;
+}
+
+.btn-red__arrow-container--gold {
+    width: 3rem;
+    height: 2rem;
+    float: right;
+    background-color: #fff;
+}
+
+.btn-red__arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* animation-name: arrow-rotate-counter-clockwise; */
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes arrow-rotate-counter-clockwise {
+    from {
+        transform: rotate(90deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.btn-red__arrow::before {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 0.2rem;
+    background-color: white;
+    transform: rotate(45deg);
+    margin-top: 0.7rem;
+    margin-left: 0.25rem;
+}
+
+.btn-red__arrow::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 0.2rem;
+    background-color: white;
+    transform: rotate(-45deg);
+    margin-top: 1.225rem;
+    margin-left: 0.25rem;
+}
+
+.btn-red__arrow--gold {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    animation-name: arrow-rotate-clockwise;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes arrow-rotate-clockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+.btn-red__arrow--gold::before {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 0.2rem;
+    background-color: #c8a374;
+    transform: rotate(45deg);
+    margin-top: 0.7rem;
+    margin-left: 0.25rem;
+}
+
+.btn-red__arrow--gold::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 0.2rem;
+    background-color: #c8a374;
+    transform: rotate(-45deg);
+    margin-top: 1.225rem;
+    margin-left: 0.25rem;
+}
+
+.unfold__global {
+    display: none;
+    margin-top: 1rem;
+    width: 40rem;
+    height: 30rem;
+    outline: 0.1rem solid #c8a374;
+}
+
+.unfold__global--show {
+    display: block;
+}
+
+/* Buttons styling end -----------------------------------*/
+
+
+
+/* Footer styling start ---------------------------------*/
+
+.temporary {
+    height: 100vh;
+}
+
+footer {
+    background-color: var(--color-third);
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 0rem 2rem 3rem 2rem;
+    grid-template-areas: 
+    "contact contact contact contact"
+    "food food food food"
+    "practical practical practical practical"
+    "hours hours hours hours";
+}
+
+.footer-heading {
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: 1.7rem;
+    margin-top: 3rem;
+}
+
+.footer__heading-underline {
+    height: 3px;
+    width: 2rem;
+    background-color: var(--color-secondary);
+    margin-bottom: 1.2rem;
+}
+
+.footer-links {
+    color: var(--color-white);
+    display: block;
+}
+
+.footer-contact {
+    grid-area: contact;
+}
+
+.footer__contact-address {
+    color: var(--color-white);
+    font-family: var(--font-text);
+    font-size: 1.3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.footer__contact-phone, .footer__contact-mail, .footer-links{
+    color: var(--color-white);
+    font-family: var(--font-text);
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+
+.footer__contact-some {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.footer__contact-facebook{
+    width: 3rem;
+    margin-top: 0.25rem;
+    margin-right: 0.5rem;
+}
+
+.footer__contact-instagram {
+    width: 3.5rem;
+}
+
+.footer-food {
+    grid-area: food;
+}
+
+.footer-practical {
+    grid-area: practical;
+}
+
+.footer-hours {
+    grid-area: hours;
+}
+
+.footer__hours-kitchen, .footer__hours-timeofday {
+    color: var(--color-white);
+    font-family: var(--font-text);
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.footer__hours-timeofday {
+    font-size: 1.3rem;
+}
+
+.footer__hours-hours {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-white);
+    font-family: var(--font-text);
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+
+/* Footer styling end -----------------------------------*/
+
+/* Blomster styling start */
+
+/* Blomster styling end */
+
+/* Forside styling start */
+
+/* Forside styling end */
+
+
+
+/* Menukort styling start */
+
+/* Menukort styling end */
+
+
+
+/* Øl styling start */
+
+/* Øl styling end */
+
+
+
+/* Oplevelser styling start */
+
+/* Oplevelser styling end */
+
+
+
+/* Møder og konferencer styling start */
+
+/* Møder og konferencer styling end */
+
+
+
+/* Selskaber styling start */
+
+/* Selskaber styling end */
+
+
+
+/* Selskabsmenu styling start */
+
+/* Selskabsmenu styling end */
+
+
+
+/* Buffet styling start */
+
+/* Buffet styling end */
+
+
+
+/* Kontakt og info styling start */
+
+/* Kontakt og info styling end */
+
+
+
+/* Vores historie styling start */
+
+/* Vores historie styling end */
+
+
+
+/* Booking styling start */
+
+/* Booking styling end */
+
+
+@media only screen and (min-width: 700px) {
+
+/* Header styling start ---------------------------------*/
+.mobile__header {
+    display: none;
+}
+
+/* Header styling end -----------------------------------*/
+
+
+
+/* Aside styling start ---------------------------------*/
+
+
+/* Aside styling end -----------------------------------*/
+
+
+
+/* Menu styling start ---------------------------------*/
+.burger-menu {
+    display: none;
+}
+
+.desktop__aside {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 19rem;
+    height: 100vh;
+    background-color: var(--color-primary);
+}
+
+.desktop__aside-logo {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.desktop__aside__logo-img {
+    width: 100%;
+}
+
+.desktop__aside-nav {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.desktop__aside__nav-list {
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-text);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.desktop__aside__nav__list-item {
+    width: 100%;
+}
+
+.desktop__aside__nav__list-link {
+    width: 100%;
+    color: var(--color-white);
+    display: block;
+    height: 3.2rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.9rem;
+}
+
+.desktop__aside__nav__list-link:hover {
+    color: var(--color-secondary);
+}
+
+.desktop__aside__nav__list-link--current {
+    color: var(--color-secondary);
+    border-right: 5px solid var(--color-secondary);
+}
+
+.desktop__aside-booking {
+    border: 0.2rem solid var(--color-white);
+    color: var(--color-white);
+    font-family: var(--font-text);
+    text-align: center;
+    margin: 5rem 2rem;
+    padding: 1rem 0.5rem;
+}
+
+.desktop__aside__booking-heading {
+    font-size: 1.4rem;
+}
+
+.desktop__aside__booking-text {
+    font-size: 0.9rem;
+}
+
+
+/* Menu styling end -----------------------------------*/
+
+
+
+/* Buttons styling start ---------------------------------*/
+
+
+/* Buttons styling end -----------------------------------*/
+
+
+
+/* Footer styling start ---------------------------------*/
+footer {
+    background-color: var(--color-third);
+    width: calc(100vw - 19rem);
+    margin-left: 19rem;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 0rem 6rem 3rem 6rem;
+    grid-template-areas: 
+    "contact food practical hours";
+}
+
+.footer__contact-some {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: start;
+}
+
+/* Footer styling end -----------------------------------*/
+
+
+
+/* Blomster styling start */
+
+/* Blomster styling end */
+
+
+
+/* Forside styling start */
+
+/* Forside styling end */
+
+
+
+/* Menukort styling start */
+
+/* Menukort styling end */
+
+
+
+/* Øl styling start */
+
+/* Øl styling end */
+
+
+
+/* Øl styling start */
+
+/* Øl styling end */
+
+
+
+/* Oplevelser styling start */
+
+/* Oplevelser styling end */
+
+
+
+/* Møder og konferencer styling start */
+
+/* Møder og konferencer styling end */
+
+
+
+/* Selskaber styling start */
+
+/* Selskaber styling end */
+
+
+
+/* Selskabsmenu styling start */
+
+/* Selskabsmenu styling end */
+
+
+
+/* Buffet styling start */
+
+/* Buffet styling end */
+
+
+
+/* Kontakt og info styling start */
+
+/* Kontakt og info styling end */
+
+
+
+/* Vores historie styling start */
+
+/* Vores historie styling end */
+
+
+
+/* Booking styling start */
+
+/* Booking styling end */
+    
+}
