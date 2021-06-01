@@ -262,6 +262,10 @@ body {
     font-style: italic;
 }
 
+.centered {
+    text-align: center;
+}
+
 .main-text-global--mtop {
     margin-top: 1rem;
 }
