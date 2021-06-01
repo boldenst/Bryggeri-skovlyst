@@ -1124,6 +1124,314 @@ footer {
 
 /* Booking styling start */
 
+.booking {
+    margin: 3rem 2rem;
+}
+
+.calender {
+    width: 100%;
+    margin: 1rem 0;
+    border: 0.15rem solid var(--color-secondary);
+    font-family: var(--font-text);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.calender__dropdown {
+    margin-top: 1rem;
+    width: 100%;
+    border: 2px solid var(--color-primary);
+    overflow: hidden;
+    position: relative;
+}
+
+
+.calender__dropdown-box {
+    width: 100%;
+    position: relative;
+    height: 1px;
+    margin-bottom: 1rem;
+}
+
+.calender__dropdown-box:after {
+    content: '';
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    transform: rotate(135deg);
+    width: 0.8rem;
+    height: 0.8rem;
+    right: 9px;
+    top: -1.7rem;
+    position: absolute;
+}
+
+.calender__dropdown-box:before {
+    content: '';
+    background-color: var(--color-primary);
+    width: 2rem;
+    height: 2rem;
+    right: 2px;
+    top: -2.1rem;
+    position: absolute;
+}
+
+.calender-dropdown__selector {
+    width: 100%;
+    color: var(--color-black);
+    padding: 0.3rem;
+    font-family: var(--font-text);
+    font-size: 1rem;
+    border: none;
+}
+
+
+
+.calender-dropdown__label {
+    position:relative;
+    width: 20rem;
+}
+
+.calender-left__wrapper, .calender-right__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+.calender-dropdown__selector {
+    width: 100%;
+}
+
+
+.calender-sub-heading {
+    color: var(--color-secondary);
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+.calender-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 0 0 0;
+    width: 100%;
+}
+
+.calender-month {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.calender__month-btn {
+    width: 2rem;
+    height: 2rem;
+}
+
+.delivery-next-month {
+    
+}
+
+.calender__prev-month {
+    margin-top: 0.1rem;
+    transform: rotate(180deg);
+}
+
+.calender-days {
+    gap: 0.1rem;
+    row-gap: 0.3rem;
+    margin: 1.3rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "mon tue wed thur fri sat sun"
+    ". date1 date2 date3 date4 date5 date6"
+    "date7 date8 date9 date10 date11 date12 date13"
+    "date14 date15 date16 date17 date18 date19 date20"
+    "date21 date22 date23 date24 date25 date26 date27"
+    "date28 date29 date30 . . . .";
+}
+
+.calender-days > p {
+    font-size: 0.9rem;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.calender-weekdays {
+    color: var(--color-secondary);
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+.date {
+    color: var(--color-secondary);
+    padding: 0.4rem;
+    cursor: pointer;
+    background-color: #EBEBEB;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+}
+
+.delivery-date {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    font-weight: 500;
+}
+
+.monday {
+    grid-area: mon;
+}
+.tuesday {
+    grid-area: tue;
+}
+.wednesday {
+    grid-area: wed;
+}
+.thursday {
+    grid-area: thur;
+}
+.friday {
+    grid-area: fri;
+}
+.saturday {
+    grid-area: sat;
+}
+.sunday {
+    grid-area: sun;
+}
+.date1 {
+    grid-area: date1;
+}
+.date2 {
+    grid-area: date2;
+}
+.date3 {
+    grid-area: date3;
+}
+.date4 {
+    grid-area: date4;
+}
+.date5 {
+    grid-area: date5;
+}
+.date6 {
+    grid-area: date6;
+}
+.date7 {
+    grid-area: date7;
+}
+.date8 {
+    grid-area: date8;
+}
+.date9 {
+    grid-area: date9;
+}
+.date10 {
+    grid-area: date10;
+}
+.date11 {
+    grid-area: date11;
+}
+.date12 {
+    grid-area: date12;
+}
+.date13 {
+    grid-area: date13;
+}
+.date14 {
+    grid-area: date14;
+}
+.date15 {
+    grid-area: date15;
+}
+.date16 {
+    grid-area: date16;
+}
+.date17 {
+    grid-area: date17;
+}
+.date18 {
+    grid-area: date18;
+}
+.date19 {
+    grid-area: date19;
+}
+.date20 {
+    grid-area: date20;
+}
+.date21 {
+    grid-area: date21;
+}
+.date22 {
+    grid-area: date22;
+}
+.date23 {
+    grid-area: date23;
+}
+.date24 {
+    grid-area: date24;
+}
+.date25 {
+    grid-area: date25;
+}
+.date26 {
+    grid-area: date26;
+}
+.date27 {
+    grid-area: date27;
+}
+.date28 {
+    grid-area: date28;
+}
+.date29 {
+    grid-area: date29;
+}
+.date30 {
+    grid-area: date30;
+}
+
+.calender-time {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.time {
+    display: block;
+    background-color: #EBEBEB;
+    color: var(--color-secondary);
+    border-radius: 0.2rem;
+}
+
+.calender-button {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding: 0.5em 0;
+    font-size: 1rem;
+    background-color: var(--color-primary);
+    border: none;
+    outline: 0.1rem solid var(--color-primary);
+    cursor: pointer;
+    font-family: var(--font-text);
+    color: var(--color-white);
+}
+
 /* Booking styling end */
 
 
@@ -1798,6 +2106,330 @@ footer {
 
 
 /* Booking styling start */
+
+.booking {
+    margin: 5rem 0 0 19rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". heading heading heading . . . . . . . ."
+    ". underline underline underline . . . . . . . ."
+    ". . . calender calender calender calender calender calender . . .";
+}
+
+.booking__heading {
+    grid-area: heading;
+}
+
+.booking__underline {
+    grid-area: underline;
+}
+
+.calender {
+    grid-area: calender;
+    width: 100%;
+    margin: 1rem 0;
+    border: 0.15rem solid var(--color-secondary);
+    font-family: var(--font-text);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.calender-right__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.calender__dropdown {
+    margin-top: 1rem;
+    width: 100%;
+    border: 2px solid var(--color-primary);
+    overflow: hidden;
+    position: relative;
+}
+
+
+.calender__dropdown-box {
+    width: 0;
+    position: relative;
+    height: 0;
+    margin-bottom: 1rem;
+}
+
+.calender__dropdown-box:after {
+    content: '';
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    transform: rotate(135deg);
+    width: 0.8rem;
+    height: 0.8rem;
+    right: 2.7rem;
+    top: 1.4rem;
+    position: absolute;
+}
+
+.calender__dropdown-box:before {
+    content: '';
+    background-color: var(--color-primary);
+    width: 2.5rem;
+    height: 2rem;
+    right: 2rem;
+    top: 1.1rem;
+    position: absolute;
+}
+
+.calender-dropdown__selector {
+    width: 100%;
+    color: var(--color-black);
+    padding: 0.3rem;
+    font-family: var(--font-text);
+    font-size: 1rem;
+    border: none;
+}
+
+
+.calender-dropdown__label {
+    position:relative;
+    width: 20rem;
+}
+
+
+
+
+.calender-dropdown__selector {
+    width: 100%;
+}
+
+
+.calender-sub-heading {
+    color: var(--color-secondary);
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+.calender-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 0 0 0;
+    width: 100%;
+}
+
+.calender-month {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.calender__month-btn {
+    width: 2rem;
+    height: 2rem;
+}
+
+.delivery-next-month {
+    
+}
+
+.calender__prev-month {
+    margin-top: 0.1rem;
+    transform: rotate(180deg);
+}
+
+.calender-days {
+    gap: 0.1rem;
+    row-gap: 0.3rem;
+    margin: 1.3rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "mon tue wed thur fri sat sun"
+    ". date1 date2 date3 date4 date5 date6"
+    "date7 date8 date9 date10 date11 date12 date13"
+    "date14 date15 date16 date17 date18 date19 date20"
+    "date21 date22 date23 date24 date25 date26 date27"
+    "date28 date29 date30 . . . .";
+}
+
+.calender-days > p {
+    font-size: 0.9rem;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.calender-weekdays {
+    color: var(--color-secondary);
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+.date {
+    color: var(--color-secondary);
+    padding: 0.4rem;
+    cursor: pointer;
+    background-color: #EBEBEB;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+}
+
+.delivery-date {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    font-weight: 500;
+}
+
+.monday {
+    grid-area: mon;
+}
+.tuesday {
+    grid-area: tue;
+}
+.wednesday {
+    grid-area: wed;
+}
+.thursday {
+    grid-area: thur;
+}
+.friday {
+    grid-area: fri;
+}
+.saturday {
+    grid-area: sat;
+}
+.sunday {
+    grid-area: sun;
+}
+.date1 {
+    grid-area: date1;
+}
+.date2 {
+    grid-area: date2;
+}
+.date3 {
+    grid-area: date3;
+}
+.date4 {
+    grid-area: date4;
+}
+.date5 {
+    grid-area: date5;
+}
+.date6 {
+    grid-area: date6;
+}
+.date7 {
+    grid-area: date7;
+}
+.date8 {
+    grid-area: date8;
+}
+.date9 {
+    grid-area: date9;
+}
+.date10 {
+    grid-area: date10;
+}
+.date11 {
+    grid-area: date11;
+}
+.date12 {
+    grid-area: date12;
+}
+.date13 {
+    grid-area: date13;
+}
+.date14 {
+    grid-area: date14;
+}
+.date15 {
+    grid-area: date15;
+}
+.date16 {
+    grid-area: date16;
+}
+.date17 {
+    grid-area: date17;
+}
+.date18 {
+    grid-area: date18;
+}
+.date19 {
+    grid-area: date19;
+}
+.date20 {
+    grid-area: date20;
+}
+.date21 {
+    grid-area: date21;
+}
+.date22 {
+    grid-area: date22;
+}
+.date23 {
+    grid-area: date23;
+}
+.date24 {
+    grid-area: date24;
+}
+.date25 {
+    grid-area: date25;
+}
+.date26 {
+    grid-area: date26;
+}
+.date27 {
+    grid-area: date27;
+}
+.date28 {
+    grid-area: date28;
+}
+.date29 {
+    grid-area: date29;
+}
+.date30 {
+    grid-area: date30;
+}
+
+.calender-time {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.time {
+    display: block;
+    background-color: #EBEBEB;
+    color: var(--color-secondary);
+    border-radius: 0.2rem;
+}
+
+.calender-button {
+    margin: 2rem auto 0 auto;
+    text-align: center;
+    width: 100%;
+    padding: 0.5em 0;
+    font-size: 1rem;
+    background-color: var(--color-primary);
+    border: none;
+    outline: 0.1rem solid var(--color-primary);
+    cursor: pointer;
+    font-family: var(--font-text);
+    color: var(--color-white);
+}
 
 /* Booking styling end */
     
