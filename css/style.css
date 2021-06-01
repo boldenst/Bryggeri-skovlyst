@@ -144,10 +144,6 @@ body {
     transition: 0.5s;
 }
 
-.burger-menu-logo {
-
-}
-
 #burger-close {
     color: var(--color-white);
     font-size: 3rem;
@@ -188,10 +184,6 @@ body {
     border-radius: 0.5rem;
 }
 
-.burger-menu-nav {
-
-}
-
 .burger-menu__nav-list {
     display: flex;
     flex-direction: column;    
@@ -207,9 +199,6 @@ body {
     font-family: var(--font-text);
     text-transform: uppercase;
     font-size: 1.3rem;
-}
-
-.burger-menu__nav__list-item--current {
 }
 
 .burger-menu__nav__list__link, .burger-menu-booking {
@@ -231,13 +220,13 @@ body {
 /* Menu styling end -----------------------------------*/
 
 /* Global Text styling start -------------------------------- */
- 
+
 .main-heading-global {
     font-family: var(--font-heading);
     text-transform: uppercase;
     font-size: 1.8rem;
     color: var(--color-black);
- }
+}
 
 .sub-heading-global {
     font-family: var(--font-heading);
@@ -251,6 +240,7 @@ body {
     background-color: var(--color-secondary);
     width: 4rem;
     margin-bottom: 0.6rem;
+    margin-top: 0.5rem;
 }
 
 .main-text-global {
@@ -305,6 +295,9 @@ body {
 
 .btn__text {
     color: #880005;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .btn__global-styling:hover .btn__text-container {
@@ -494,8 +487,8 @@ body {
 .unfold__global {
     display: none;
     margin-top: 1rem;
-    width: 40rem;
-    height: 30rem;
+    width: 100%;
+    height: 100%;
     outline: 0.1rem solid #c8a374;
 }
 
@@ -514,6 +507,7 @@ body {
 }
 
 footer {
+    margin-top: 5rem;
     background-color: var(--color-third);
     width: 100vw;
     display: grid;
@@ -722,6 +716,84 @@ footer {
 
 
 /* Menukort styling start */
+.menu-grid-container {
+    margin-top: 4rem;
+    margin: 0 2rem;
+    display: grid;
+    row-gap: 4rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "menu-info menu-info menu-info menu-info"
+    "menu-cont menu-cont menu-cont menu-cont"
+    "opening opening opening opening"
+    ;
+}
+
+.menu-info-container__left {
+    grid-area: menu-info;
+}
+
+.menu-container {
+    grid-area: menu-cont;
+}
+
+..menu-info-container__right {
+    grid-area: opening;
+}
+
+.menu-toggles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.unfold-lunch__column-left, .unfold-lunch__column-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.unfold-lunch__dishes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.unfold-lunch__dishes-divided {
+    width: 80%;
+}
+
+.menu-price__btm {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.menu-price__multiple {
+    margin-top: 1.5rem;
+    text-align: right;
+}
+
+.unfold-lunch__fish, .unfold-lunch__green, .unfold-lunch__meat, .unfold-lunch__cheese{
+    margin-bottom: 2rem;
+}
+
+.unfold-lunch__extra-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.unfold-lunch__extra-info p {
+    margin-top: 1rem;
+}
+
+.menu-lunch__download {
+    display: flex;
+    margin: 2rem auto;
+}
 
 /* Menukort styling end */
 
@@ -1164,7 +1236,7 @@ footer {
 footer {
     background-color: var(--color-third);
     width: calc(100vw - 19rem);
-    margin-left: 19rem;
+    margin: 5rem 0 0 19rem;
     gap: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1217,7 +1289,10 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 15rem;
+    height: 19.1rem;
+}
+
+.main__info--margin {
     margin-left: 2rem;
 }
 
@@ -1230,12 +1305,12 @@ footer {
 .main__wrapper {
     margin-top: 8rem;
     display: grid;
-    row-gap: 4rem;
+    row-gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    ". img img img img info info info info info . ."
-    ". info-rev info-rev info-rev info-rev info-rev . img-rev img-rev img-rev img-rev ."
+    ". img img img img img info info info info . ."
+    ". info-rev info-rev info-rev info-rev . img-rev img-rev img-rev img-rev img-rev ."
     ;
 }
 
