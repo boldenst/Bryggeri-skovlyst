@@ -1036,7 +1036,7 @@ footer {
 }
 
 .faq-container {
-    height: 27rem;
+    height: 28rem;
     overflow: hidden;
 }
 
@@ -1071,6 +1071,26 @@ footer {
 .less-faqs {
     display: none;
 }
+
+.contact__hours-hours {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.2rem 0;
+}
+
+.contact-grid-container-hours__open {
+    margin-top: 1.5rem;
+}
+
+.contact-grid-container-hours__kitchen {
+    margin: 1rem 0;
+}
+
+.contact-grid-container-hours__night {
+    margin-top: 1rem;
+}
+
 
 /* Kontakt og info styling end */
 
@@ -1559,6 +1579,144 @@ footer {
 
 
 /* Kontakt og info styling start */
+
+.contact-hero-image {
+    background-image: url(../images/bryggeri-skovlyst.jpg);
+}
+
+.contact-grid-container {
+    margin: 0 0 0 19rem;
+    display: grid;
+    row-gap: 4rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". intro intro intro intro . . . . . . ."
+    ". general general general general . . hours hours hours hours ."
+    ". giftcard giftcard giftcard giftcard . . job job job job .";
+}
+
+.contact-grid-container__intro {
+    grid-area: intro;
+}
+
+.contact-grid-container__contact {
+    grid-area: general;
+}
+
+.contact-mail-container, .contact-phone-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.contact-mail-container__img, .contact-phone-container__img {
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.contact-grid-container__hours {
+    grid-area: hours;
+}
+
+.contact-grid-container__giftcard {
+    grid-area: giftcard;
+}
+
+.contact-grid-container__job {
+    grid-area: job;
+}
+
+.contact-faq {
+    margin: 5rem 0 0 19rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". heading heading . . . . . . . . ."
+    ". underline underline . . . . . . . . ."
+    ". faq faq faq faq faq faq faq faq faq faq ."
+    ". . . . . button button . . . . .";
+}
+
+.contact-faq__caption {
+    grid-area: heading;
+}
+
+.contact-faq__underline {
+    grid-area: underline;
+}
+
+.faq-container {
+    grid-area: faq;
+    height: auto;
+    overflow: hidden;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.faq-container__faq {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-heading {
+    margin: 1.5rem 0 0.7rem 0;
+}
+
+.faq-button {
+    grid-area: button;
+    margin: 1.5rem auto;
+    font-size: 1rem;
+    padding: 0.5em 1.4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    border: none;
+    outline: 0.1rem solid var(--color-primary);
+    cursor: pointer;
+    font-family: var(--font-heading);
+    color: var(--color-white);
+}
+
+.unfold-faq {
+    height: auto;
+}
+
+.less-faqs {
+    display: none;
+}
+
+.faq-hide {
+    display: none;
+}
+
+.faq-show {
+    display: flex;
+}
+
+
+.contact__hours-hours {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.2rem 0;
+}
+
+.contact-grid-container-hours__open {
+    margin-top: 1.5rem;
+}
+
+.contact-grid-container-hours__kitchen {
+    margin: 1rem 0;
+}
+
+.contact-grid-container-hours__night {
+    margin-top: 1rem;
+}
 
 /* Kontakt og info styling end */
 
