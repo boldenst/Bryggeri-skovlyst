@@ -1134,7 +1134,27 @@ footer {
     display: none;
 }
 
+
 /* Header styling end -----------------------------------*/
+
+/* Hero image styling start -----------------------------------*/
+
+
+.header-spacer-global {
+    display: none;
+}
+
+.hero-image-global {
+    margin-left: 19rem;
+    height: 20rem;
+    width: calc(100vw - 19rem);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 2.5rem;
+    background-position: center;
+}
+
+/* Hero image styling end -----------------------------------*/
 
 
 
@@ -1471,7 +1491,7 @@ footer {
     ". . baeveren baeveren baeveren . svanen svanen svanen . ."
     ". . raeven raeven raeven . uglen uglen uglen . ."
     ". . storken storken storken . guldsmeden guldsmeden guldsmeden . ."
-    ". . . . . . . . button button ."
+    ". . . . . . . . . button button"
     ;
 }
 
