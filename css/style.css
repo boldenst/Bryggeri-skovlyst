@@ -258,6 +258,14 @@ body {
     text-transform: uppercase;
 }
 
+.italic {
+    font-style: italic;
+}
+
+.main-text-global--mtop {
+    margin-top: 1rem;
+}
+
 /* Text styling end*/
 
 
