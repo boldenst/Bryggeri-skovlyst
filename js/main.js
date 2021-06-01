@@ -19,6 +19,7 @@ $("#burger-close").click(function(){
 
 $(document).ready(function() {
     $('.faq-button').click(function() {
-      $('.faq-container').toggleClass('unfold-faq')
+      $('.faq-button').toggleClass('less-faqs')
+      $('.faq-hide').toggleClass('faq-show')
     });
 });
