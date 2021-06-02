@@ -14,6 +14,12 @@ $(document).ready(function() {
     $('.btn-red__lunch-arrow-container').toggleClass('btn-red__arrow-container--gold')
     $('.btn-red__lunch-arrow').toggleClass('btn-red__arrow--gold')
 
+    $('.btn-red__lunch').removeClass('btn-red__lunch--desktop-first')
+    $('.unfold__lunch').removeClass('unfold__lunch--desktop-first')
+    $('.btn-red__lunch-text').removeClass('btn-red__lunch-text--desktop-first')
+    $('.btn-red__lunch-arrow-container').removeClass('btn-red__lunch-arrow-container--desktop-first')
+    $('.btn-red__lunch-arrow').removeClass('btn-red__lunch-arrow--desktop-first')
+
     $('.btn-red__dinner').removeClass('btn-red__global-styling--gold')
     $('.unfold__dinner').removeClass('unfold__global--show')
     $('.btn-red__dinner-text').removeClass('btn-red__text--gold')
@@ -41,6 +47,12 @@ $(document).ready(function() {
     $('.btn-red__dinner-text').toggleClass('btn-red__text--gold')
     $('.btn-red__dinner-arrow-container').toggleClass('btn-red__arrow-container--gold')
     $('.btn-red__dinner-arrow').toggleClass('btn-red__arrow--gold')
+
+    $('.btn-red__lunch').removeClass('btn-red__lunch--desktop-first')
+    $('.unfold__lunch').removeClass('unfold__lunch--desktop-first')
+    $('.btn-red__lunch-text').removeClass('btn-red__lunch-text--desktop-first')
+    $('.btn-red__lunch-arrow-container').removeClass('btn-red__lunch-arrow-container--desktop-first')
+    $('.btn-red__lunch-arrow').removeClass('btn-red__lunch-arrow--desktop-first')
     
     $('.btn-red__lunch').removeClass('btn-red__global-styling--gold')
     $('.unfold__lunch').removeClass('unfold__global--show')
@@ -69,6 +81,12 @@ $(document).ready(function() {
     $('.btn-red__children-text').toggleClass('btn-red__text--gold')
     $('.btn-red__children-arrow-container').toggleClass('btn-red__arrow-container--gold')
     $('.btn-red__children-arrow').toggleClass('btn-red__arrow--gold')
+
+    $('.btn-red__lunch').removeClass('btn-red__lunch--desktop-first')
+    $('.unfold__lunch').removeClass('unfold__lunch--desktop-first')
+    $('.btn-red__lunch-text').removeClass('btn-red__lunch-text--desktop-first')
+    $('.btn-red__lunch-arrow-container').removeClass('btn-red__lunch-arrow-container--desktop-first')
+    $('.btn-red__lunch-arrow').removeClass('btn-red__lunch-arrow--desktop-first')
     
     $('.btn-red__lunch').removeClass('btn-red__global-styling--gold')
     $('.unfold__lunch').removeClass('unfold__global--show')
@@ -97,6 +115,12 @@ $(document).ready(function() {
     $('.btn-red__drinks-text').toggleClass('btn-red__text--gold')
     $('.btn-red__drinks-arrow-container').toggleClass('btn-red__arrow-container--gold')
     $('.btn-red__drinks-arrow').toggleClass('btn-red__arrow--gold')
+
+    $('.btn-red__lunch').removeClass('btn-red__lunch--desktop-first')
+    $('.unfold__lunch').removeClass('unfold__lunch--desktop-first')
+    $('.btn-red__lunch-text').removeClass('btn-red__lunch-text--desktop-first')
+    $('.btn-red__lunch-arrow-container').removeClass('btn-red__lunch-arrow-container--desktop-first')
+    $('.btn-red__lunch-arrow').removeClass('btn-red__lunch-arrow--desktop-first')
     
     $('.btn-red__lunch').removeClass('btn-red__global-styling--gold')
     $('.unfold__lunch').removeClass('unfold__global--show')
