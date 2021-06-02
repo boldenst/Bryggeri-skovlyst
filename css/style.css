@@ -402,14 +402,14 @@ body {
 }
 
 .btn-red__arrow-container {
-    width: 3rem;
+    width: 2rem;
     height: 2rem;
     float: right;
     background-color: #880005;
 }
 
 .btn-red__arrow-container--gold {
-    width: 3rem;
+    width: 2rem;
     height: 2rem;
     float: right;
     background-color: #fff;
@@ -1728,6 +1728,68 @@ footer {
 
 /* Buttons styling start ---------------------------------*/
 
+.btn-red__lunch--desktop-first {
+    background-color: #fff;
+    outline: 0.1rem solid #c8a374;
+}
+
+.unfold__lunch--desktop-first {
+    display: block;
+}
+
+.btn-red__lunch-text--desktop-first {
+    color: #c8a374;
+}
+
+.btn-red__lunch-arrow-container--desktop-first {
+    width: 2rem;
+    height: 2rem;
+    float: right;
+    background-color: #fff;
+}
+
+.btn-red__lunch-arrow--desktop-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    animation-name: arrow-rotate-clockwise--desktop-first;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes arrow-rotate-clockwise--desktop-first {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+.btn-red__lunch-arrow--desktop-first::before {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 0.2rem;
+    background-color: #c8a374;
+    transform: rotate(45deg);
+    margin-top: 0.7rem;
+    margin-left: 0.25rem;
+}
+
+.btn-red__lunch-arrow--desktop-first::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 0.2rem;
+    background-color: #c8a374;
+    transform: rotate(-45deg);
+    margin-top: 1.225rem;
+    margin-left: 0.25rem;
+}
 
 /* Buttons styling end -----------------------------------*/
 
@@ -2006,7 +2068,45 @@ footer {
     ;
 }
 
-.unfold-lunch__fish, .unfold-lunch__season {
+.unfold-children__container {
+    display: grid;
+    padding-top: 3rem;
+    gap: 2rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". . . first first first first . . ."
+    ". . . . . . . . btn ."
+    ;
+}
+
+.unfold-drinks__container {
+    display: grid;
+    padding-top: 3rem;
+    gap: 2rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". soft soft soft . . nobub nobub nobub ."
+    ". water water water . . coffee coffee coffee ."
+    ". tea tea tea . . . . . ."
+    ". beer beer beer . . dk dk dk ."
+    ". beer beer beer . . mous mous mous ."
+    ". beer beer beer . . rose rose rose ."
+    ". whte whte whte . . red-wine red-wine red-wine ."
+    ". port port port . . red-wine red-wine red-wine ."
+    ". dessert dessert dessert . . cognac cognac cognac ."
+    ". arma arma arma . . grappa grappa grappa ."
+    ". whisky whisky whisky . . rum rum rum ."
+    ". vodka vodka vodka . . rum rum rum ."
+    ". mix mix mix . . . . . ."
+    ". . recommend recommend recommend recommend recommend recommend . ."
+    ". . . . . . . . btn ."
+    ;
+}
+
+
+.unfold-lunch__fish, .unfold-lunch__season, .unfold-lunch__child-dish{
     grid-area: first;
 }
 
@@ -2014,7 +2114,7 @@ footer {
     grid-area: third;
 }
 
-.unfold-lunch__meat, .unfold-lunch__firsts{
+.unfold-lunch__meat, .unfold-lunch__firsts {
     grid-area: second;
 }
 
@@ -2038,6 +2138,88 @@ footer {
     grid-area: recommend;
 }
 
+
+
+.unfold-lunch__soft-drinks {
+    grid-area: soft;
+}
+
+.unfold-lunch__soft-drinks-no-bubbles {
+    grid-area: nobub;
+}
+
+.unfold-lunch__water {
+    grid-area: water;
+}
+
+.unfold-lunch__coffee {
+    grid-area: coffee;
+}
+
+.unfold-lunch__tea {
+    grid-area: tea;
+}
+
+.unfold-lunch__beer {
+    grid-area: beer;
+}
+
+.unfold-lunch__dk-wine {
+    grid-area: dk;
+}
+
+.unfold-lunch__mous-wine {
+    grid-area: mous;
+}
+
+.unfold-lunch__white-wine {
+    grid-area: whte;
+}
+
+.unfold-lunch__rosé {
+    grid-area: rose;
+}
+
+.unfold-lunch__red-wine {
+    grid-area: red-wine;
+}
+
+.unfold-lunch__dessert-wine {
+    grid-area: dessert;
+}
+
+.unfold-lunch__port {
+    grid-area: port;
+}
+
+.unfold-lunch__cognac {
+    grid-area: cognac;
+}
+
+.unfold-lunch__armagnac {
+    grid-area: arma;
+}
+
+.unfold-lunch__grappa {
+    grid-area: grappa;
+}
+
+.unfold-lunch__whisky {
+    grid-area: whisky;
+}
+
+.unfold-lunch__mixed {
+    grid-area: mix;
+}
+
+.unfold-lunch__rum {
+    grid-area: rum;
+}
+
+.unfold-lunch__vodka {
+    grid-area: vodka;
+}
+
 .btn__global-styling-gold {
     grid-area: btn;
 }
@@ -2046,6 +2228,7 @@ footer {
     grid-area: btn;
     margin: 2rem 0;
 }
+
 
 
 
