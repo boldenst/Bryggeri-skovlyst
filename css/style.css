@@ -963,6 +963,38 @@ footer {
 
 
 /* Oplevelser styling start */
+.events-hero-image {
+    background-image: url(../images/selskab-bryggeriet.jpg);
+    background-size: 100%;
+    background-position: bottom center;
+}
+
+.events {
+    margin: 0 2rem;
+}
+
+.events__plan {
+    margin: 3rem 0;
+
+}
+
+.events-plan__img {
+    width: 100%;
+}
+
+
+
+.events__skovhus {
+
+}
+
+.events-skovhus__img {
+    width: 100%;
+}
+
+.events-skovhus__img, .events-plan__img {
+    margin-bottom: 1rem;
+}
 
 /* Oplevelser styling end */
 
@@ -970,17 +1002,149 @@ footer {
 
 /* Møder og konferencer styling start */
 
+.meetings-hero-image {
+    background-image: url(../images/selskab-bryggeriet.jpg);
+    background-size: 100%;
+    background-position: bottom center;
+}
+
+.events {
+    margin: 0 2rem;
+}
+
+.events__plan {
+    margin: 3rem 0;
+
+}
+
+.events-plan__img {
+    width: 100%;
+}
+
+
+
+.events__skovhus {
+
+}
+
+.events-skovhus__img {
+    width: 100%;
+}
+
+.events-skovhus__img, .events-plan__img {
+    margin-bottom: 1rem;
+}
+
+
 /* Møder og konferencer styling end */
 
 
 
 /* Selskaber styling start */
 
+.parties-hero-image {
+    background-image: url(../images/selskab-bryggeriet.jpg);
+    background-size: 100%;
+    background-position: bottom center;
+}
+
+.parties {
+    margin: 0 2rem;
+}
+
+.parties__season {
+    margin: 3rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    "img img"
+    "heading heading"
+    "underline underline"
+    "text text"
+    "button-party-menu button-buffet";
+}
+
+.parties-season__img {
+    width: 100%;
+    grid-area: img;
+    margin-bottom: 1rem;
+}
+
+.parties-season__heading {
+    grid-area: heading;
+}
+
+.parties-season__underline {
+    grid-area: underline;
+}
+
+.parties-season__text {
+    grid-area: text;
+}
+
+.parties-season__button-party-menu {
+    width: 100%;
+    font-size: 0.7rem;
+    grid-area: button-party-menu;
+}
+
+.parties-season__button-buffet {
+    width: 100%;
+    font-size: 0.7rem;
+    grid-area: button-buffet;
+}
+
+.parties__checklist {
+    margin: 3rem 0 0 0;
+}
+
+
+.parties-checklist__list {
+    list-style: none;
+}
+
+.parties-checklist-list__item {
+    margin: 0.3rem 0;
+}
+
+.bread-crumb {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    font-family: var(--font-text);
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--color-black);
+    grid-area: bread-crumb;
+}
+
+.bread-crumb > p {
+    margin-left: 0.4rem;
+}
+
+.bread-crumb > a {
+    color: var(--color-black);
+}
+
 /* Selskaber styling end */
 
 
 
 /* Selskabsmenu styling start */
+
+.parties-party-menu-hero-image {
+   background-image: url(../images/bryggeri-skovlyst.jpg);
+   margin: 0; 
+}
+
+.parties-party-menu {
+    margin: 0 2rem;
+}
+
+
 
 /* Selskabsmenu styling end */
 
@@ -1608,9 +1772,27 @@ footer {
     margin-left: 19rem;
 }
 
+.main-hero-image__grid-wrap {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". heading heading heading heading . . . . . . ."
+    ". text text text text . . . . . . .";
+}
+
+.heading--white {
+    grid-area: heading;
+}
+
+.text--white {
+    grid-area: text;
+}
+
 .text-centered {
     text-align: left;
-    margin-left: 25rem;
+    margin: 0;
     width: 25rem;
 }
 
@@ -1890,11 +2072,221 @@ footer {
 
 /* Oplevelser styling start */
 
+.events-hero-image {
+    background-image: url(../images/selskab-bryggeriet.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+.events {
+    width: calc(100vw - 19rem);
+    margin: 0 0 0 19rem;
+}
+
+.events__intro {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". heading heading heading heading . . . . . . ."
+    ". underline underline underline . . . . . . . ."
+    ". text text text text . . . . . . .";
+}
+
+.events-intro__heading {
+    grid-area: heading;
+}
+
+.events-intro__underline {
+    grid-area: underline;
+}
+
+.events-intro__text {
+    grid-area: text;
+}
+
+.events__plan {
+    margin: 3rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    column-gap: 2rem;
+    grid-template-areas: 
+    ". img img img img img heading heading heading heading heading ."
+    ". img img img img img underline underline underline underline underline ."
+    ". img img img img img text text text text text ."
+    ". img img img img img . . . . . ."
+    ". img img img img img button button . . . ."
+    ;
+}
+
+.events-plan__img {
+    width: 100%;
+    grid-area: img;
+    margin-bottom: 0;
+}
+
+.events-plan__heading {
+    grid-area: heading;
+}
+
+.events-plan__underline {
+    grid-area: underline;
+}
+
+.events-plan__text {
+    grid-area: text;
+}
+
+.events-plan__button {
+    margin-bottom: 1.65rem;
+    grid-area: button;
+    text-align: center;
+}
+
+.events__skovhus {
+    margin: 3rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    column-gap: 2rem;
+    grid-template-areas: 
+    ". heading heading heading heading . img img img img img ."
+    ". underline underline underline underline . img img img img img ."
+    ". text text text text . img img img img img ."
+    ". . . . . . img img img img img ."
+    ;
+}
+
+.events-skovhus__img {
+    width: 100%;
+    grid-area: img;
+    margin-bottom: 0;
+}
+
+.events-skovhus__heading {
+    grid-area: heading;
+}
+
+.events-skovhus__underline {
+    grid-area: underline;
+}
+
+.events-skovhus__text {
+    grid-area: text;
+}
+
+
+
+
+
+
 /* Oplevelser styling end */
 
 
 
 /* Møder og konferencer styling start */
+
+.meetings-hero-image {
+    background-image: url(../images/selskab-bryggeriet.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+.meetings {
+    width: calc(100vw - 19rem);
+    margin: 0 0 0 19rem;
+}
+
+.meetings__intro {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". heading heading heading heading . . . . . . ."
+    ". underline underline underline . . . . . . . ."
+    ". text text text text . . . . . . .";
+}
+
+.meetings-intro__heading {
+    grid-area: heading;
+}
+
+.meetings-intro__underline {
+    grid-area: underline;
+}
+
+.meetings-intro__text {
+    grid-area: text;
+}
+
+.meetings__packages {
+    margin: 3rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    column-gap: 2rem;
+    grid-template-areas: 
+    ". heading heading heading heading . img img img img img ."
+    ". underline underline underline underline . img img img img img ."
+    ". text text text text . img img img img img ."
+    ". . . . . . img img img img img ."
+    ;
+}
+
+.meetings-packages__img {
+    width: 100%;
+    grid-area: img;
+    margin-bottom: 0;
+}
+
+.meetings-packages__heading {
+    grid-area: heading;
+}
+
+.meetings-packages__underline {
+    grid-area: underline;
+}
+
+.meetings-packages__text {
+    grid-area: text;
+}
+
+.events__skovhus {
+    margin: 3rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    column-gap: 2rem;
+    grid-template-areas: 
+    ". heading heading heading heading . img img img img img ."
+    ". underline underline underline underline . img img img img img ."
+    ". text text text text . img img img img img ."
+    ". . . . . . img img img img img ."
+    ;
+}
+
+.events-skovhus__img {
+    width: 100%;
+    grid-area: img;
+    margin-bottom: 0;
+}
+
+.events-skovhus__heading {
+    grid-area: heading;
+}
+
+.events-skovhus__underline {
+    grid-area: underline;
+}
+
+.events-skovhus__text {
+    grid-area: text;
+}
 
 /* Møder og konferencer styling end */
 
@@ -1902,11 +2294,133 @@ footer {
 
 /* Selskaber styling start */
 
+
+.parties-hero-image {
+    background-image: url(../images/selskab-bryggeriet.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+.parties {
+    width: calc(100vw - 19rem);
+    margin: 0 0 0 19rem;
+}
+
+.parties__intro {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". bread-crumb bread-crumb bread-crumb . . . . . . . ."
+    ". heading heading heading . . . . . . . ."
+    ". underline underline underline . . . . . . . ."
+    ". text text text text . . . . . . .";
+}
+
+.parties-intro__heading {
+    grid-area: heading;
+}
+
+.parties-intro__underline {
+    grid-area: underline;
+}
+
+.parties-intro__text {
+    grid-area: text;
+}
+
+
+.parties__season {
+    margin: 3rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    ". heading heading heading heading . . img img img img ."
+    ". underline underline underline underline . . img img img img ."
+    ". text text text text . . img img img img ."
+    ". button-party-menu button-party-menu button-buffet button-buffet . . img img img img .";
+}
+
+.parties-season__img {
+    width: 100%;
+    grid-area: img;
+    margin-bottom: 1rem;
+}
+
+.parties-season__heading {
+    grid-area: heading;
+}
+
+.parties-season__underline {
+    grid-area: underline;
+}
+
+.parties-season__text {
+    grid-area: text;
+}
+
+.parties-season__button-party-menu {
+    width: 100%;
+    font-size: 0.7rem;
+    grid-area: button-party-menu;
+}
+
+.parties-season__button-buffet {
+    width: 100%;
+    font-size: 0.7rem;
+    grid-area: button-buffet;
+}
+
+.parties__checklist {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". heading heading heading . . . . . . . ."
+    ". underline underline underline . . . . . . . ."
+    ". checklist checklist checklist checklist checklist checklist checklist checklist checklist checklist .";
+}
+
+.parties-checklist__heading {
+    grid-area: heading;
+}
+
+.parties-checklist__underline {
+    grid-area: underline;
+}
+
+.parties-checklist__list {
+    grid-area: checklist;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.parties-party-menu-hero-image {
+    margin-bottom: 0;
+}
+
+.bread-crumb {
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+}
+
+
 /* Selskaber styling end */
 
 
 
 /* Selskabsmenu styling start */
+
+.parties-party-menu {
+    width: calc(100vw - 19rem);
+    margin: 0 0 0 19rem;
+}
 
 /* Selskabsmenu styling end */
 

@@ -124,3 +124,4 @@ $(document).ready(function() {
       $('.faq-hide').toggleClass('faq-show')
     });
 });
+
