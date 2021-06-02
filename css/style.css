@@ -274,6 +274,11 @@ body {
     margin-bottom: 1rem;
 }
 
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
 /* Text styling end*/
 
 
@@ -1022,7 +1027,12 @@ footer {
     background-position: bottom center;
 }
 
-.events {
+.meetings-packages__img {
+    width: 100%;
+    margin: 2rem 0 1rem 0;
+}
+
+.meetings {
     margin: 0 2rem;
 }
 
@@ -1036,9 +1046,13 @@ footer {
 }
 
 
+.unfold__early-meetings, .unfold__day-meetings, .unfold__allday-meetings {
+    padding: 0 1rem 1rem 1rem;
+    text-align: center;
+}
 
-.events__skovhus {
-
+.unfold__extras-meetings {
+    padding: 0 1rem 1rem 1rem;
 }
 
 .events-skovhus__img {
@@ -1047,6 +1061,32 @@ footer {
 
 .events-skovhus__img, .events-plan__img {
     margin-bottom: 1rem;
+}
+
+.meeting-menu-heading {
+    margin-top: 2rem;
+}
+
+.meeting-menu-time {
+    padding-top: 1rem;
+}
+
+.meeting-menu-description {
+    padding-top: 2rem;
+}
+
+.meeting-menu-text {
+    margin-top: 0.5rem;
+}
+
+.meeting-menu-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.meeting-menu-heading {
+    text-align: center;
 }
 
 
@@ -2662,37 +2702,21 @@ footer {
     grid-area: text;
 }
 
-.events__skovhus {
-    margin: 3rem 0;
-    width: 100%;
+.unfold__early-meetings, .unfold__day-meetings, .unfold__allday-meetings, .unfold__extras-meetings {
+    padding: 1rem;
+    grid-area: menu;
+}
+
+.unfold-early-meetings__grid, .unfold-day-meetings__grid, .unfold-allday-meetings__grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    column-gap: 2rem;
-    grid-template-areas: 
-    ". heading heading heading heading . img img img img img ."
-    ". underline underline underline underline . img img img img img ."
-    ". text text text text . img img img img img ."
-    ". . . . . . img img img img img ."
-    ;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
 }
-
-.events-skovhus__img {
-    width: 100%;
-    grid-area: img;
-    margin-bottom: 0;
-}
-
-.events-skovhus__heading {
-    grid-area: heading;
-}
-
-.events-skovhus__underline {
-    grid-area: underline;
-}
-
-.events-skovhus__text {
-    grid-area: text;
+.unfold-extras-meetings__grid{
+    display: grid;
+    margin: 0 auto;
+    width: 50%;
 }
 
 /* Møder og konferencer styling end */
