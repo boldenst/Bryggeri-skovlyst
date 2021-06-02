@@ -1212,7 +1212,6 @@ footer {
 }
 
 .faq-container {
-    height: 28rem;
     overflow: hidden;
 }
 
@@ -1266,6 +1265,19 @@ footer {
 .contact-grid-container-hours__night {
     margin-top: 1rem;
 }
+
+.faq-mobile-hide {
+    display: none;
+}
+
+.faq-hide {
+    display: none;
+}
+
+.faq-show {
+    display: flex;
+}
+
 
 
 /* Kontakt og info styling end */
@@ -2551,6 +2563,11 @@ footer {
 .faq-show {
     display: flex;
 }
+
+.faq-mobile-hide {
+    display: flex;
+}
+
 
 
 .contact__hours-hours {
