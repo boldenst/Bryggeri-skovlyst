@@ -143,9 +143,44 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+  $('.btn-red__skovhus').click(function() {
+    $('.btn-red__skovhus').toggleClass('btn-red__global-styling--gold')
+    $('.unfold__skovhus').toggleClass('unfold__global--show')
+    $('.btn-red__skovhus-text').toggleClass('btn-red__text--gold')
+    $('.btn-red__skovhus-arrow-container').toggleClass('btn-red__arrow-container--gold')
+    $('.btn-red__skovhus-arrow').toggleClass('btn-red__arrow--gold')
+
+    $('.btn-red__ice').removeClass('btn-red__global-styling--gold')
+    $('.unfold__ice').removeClass('unfold__global--show')
+    $('.btn-red__ice-text').removeClass('btn-red__text--gold')
+    $('.btn-red__ice-arrow-container').removeClass('btn-red__arrow-container--gold')
+    $('.btn-red__ice-arrow').removeClass('btn-red__arrow--gold')
+    
+
+  });
+});
+
+$(document).ready(function() {
+  $('.btn-red__ice').click(function() {
+    $('.btn-red__ice').toggleClass('btn-red__global-styling--gold')
+    $('.unfold__ice').toggleClass('unfold__global--show')
+    $('.btn-red__ice-text').toggleClass('btn-red__text--gold')
+    $('.btn-red__ice-arrow-container').toggleClass('btn-red__arrow-container--gold')
+    $('.btn-red__ice-arrow').toggleClass('btn-red__arrow--gold')
+    
+    $('.btn-red__skovhus').removeClass('btn-red__global-styling--gold')
+    $('.unfold__skovhus').removeClass('unfold__global--show')
+    $('.btn-red__skovhus-text').removeClass('btn-red__text--gold')
+    $('.btn-red__skovhus-arrow-container').removeClass('btn-red__arrow-container--gold')
+    $('.btn-red__skovhus-arrow').removeClass('btn-red__arrow--gold')
+  });
+});
+
+$(document).ready(function() {
     $('.faq-button').click(function() {
       $('.faq-button').toggleClass('less-faqs')
       $('.faq-hide').toggleClass('faq-show')
+      $('.faq-mobile-hide').toggleClass('faq-show')
     });
 });
 

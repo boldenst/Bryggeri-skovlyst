@@ -993,6 +993,23 @@ footer {
     margin-bottom: 1rem;
 }
 
+.unfold__skovhus {
+    padding: 1rem;
+}
+
+.events-menu-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.events-menu-toggles {
+    margin: 1rem auto 0 auto;
+}
+
+.btn-red__skovhus, .btn-red__ice {
+    margin: 1rem 0;
+}
+
 /* Oplevelser styling end */
 
 
@@ -1209,7 +1226,6 @@ footer {
 }
 
 .faq-container {
-    height: 28rem;
     overflow: hidden;
 }
 
@@ -1263,6 +1279,19 @@ footer {
 .contact-grid-container-hours__night {
     margin-top: 1rem;
 }
+
+.faq-mobile-hide {
+    display: none;
+}
+
+.faq-hide {
+    display: none;
+}
+
+.faq-show {
+    display: flex;
+}
+
 
 
 /* Kontakt og info styling end */
@@ -2508,7 +2537,55 @@ footer {
     grid-area: text;
 }
 
+.events-menu-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". toggles toggles toggles toggles toggles toggles toggles toggles toggles toggles ."
+    ". menu menu menu menu menu menu menu menu menu menu .";
+}
 
+.events-menu-toggles {
+    grid-area: toggles;
+    margin: 1rem 0 0 0;
+    column-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+}
+
+.btn-red__skovhus, .btn-red__ice {
+    grid-column: span 2;
+    width: 100%;
+}
+
+.unfold__skovhus, .unfold__ice {
+    grid-area: menu;
+}
+
+
+.unfold__skovhus {
+    padding: 1rem;
+}
+
+.unfold-skovhus__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    margin: 0 3rem;
+}
+
+
+.events-menu-toggles {
+    margin: 1rem 0 0 0;
+}
+
+.btn-red__skovhus, .btn-red__ice {
+    margin: 1rem 0;
+}
 
 
 
@@ -2881,6 +2958,11 @@ footer {
 .faq-show {
     display: flex;
 }
+
+.faq-mobile-hide {
+    display: flex;
+}
+
 
 
 .contact__hours-hours {
