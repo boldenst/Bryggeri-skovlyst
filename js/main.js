@@ -122,6 +122,7 @@ $(document).ready(function() {
     $('.faq-button').click(function() {
       $('.faq-button').toggleClass('less-faqs')
       $('.faq-hide').toggleClass('faq-show')
+      $('.faq-mobile-hide').toggleClass('faq-show')
     });
 });
 
