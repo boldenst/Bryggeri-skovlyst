@@ -270,6 +270,10 @@ body {
     margin-top: 1rem;
 }
 
+.mbot {
+    margin-bottom: 1rem;
+}
+
 /* Text styling end*/
 
 
@@ -728,6 +732,10 @@ footer {
 
 
 /* Menukort styling start */
+.menu-hero-image {
+    background-image: url(../images/oel-hero.jpg);
+}
+
 .menu-grid-container {
     margin-top: 4rem;
     margin: 0 2rem;
@@ -750,7 +758,7 @@ footer {
     grid-area: menu-cont;
 }
 
-..menu-info-container__right {
+.menu-info-container__right {
     grid-area: opening;
 }
 
@@ -758,13 +766,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.unfold-lunch__column-left, .unfold-lunch__column-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1rem;
 }
 
 .unfold-lunch__dishes {
@@ -788,10 +789,6 @@ footer {
     text-align: right;
 }
 
-.unfold-lunch__fish, .unfold-lunch__green, .unfold-lunch__meat, .unfold-lunch__cheese{
-    margin-bottom: 2rem;
-}
-
 .unfold-lunch__extra-info {
     display: flex;
     flex-direction: column;
@@ -812,7 +809,7 @@ footer {
 
 
 /* Øl styling start */
-.oel-hero-image {
+.menu-hero-image {
     background-image: url(../images/oel-hero.jpg);
 }
 
@@ -1719,6 +1716,156 @@ footer {
 
 
 /* Menukort styling start */
+
+.menu-grid-container {
+    width: calc(100vw - 19rem);
+    margin: 0 0 0 19rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". info info info info info info info info info info ."
+    ". menu menu menu menu menu menu menu menu menu menu ."
+    ;
+}
+
+.menu-info-container {
+    grid-area: info;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "menu-head menu-head menu-head menu-head menu-head menu-head menu-head menu-head menu-head menu-head"
+    "info-l info-l info-l info-l info-l info-l . info-r info-r info-r"
+    ;
+}
+
+.menu-info__heading {
+    grid-area: menu-head;
+}
+
+.menu-info-container__left {
+    grid-area: info-l;
+}
+
+.menu-info-container__right {
+    grid-area: info-r;
+}
+
+.opening-hours__hours {
+    display: flex;
+    flex-direction: column;
+}
+
+.opening-hours-container {
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.opening-hours__hours-lunch{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-container {
+    grid-area: menu;
+}
+
+.menu-toggles {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-toggles__grid {
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+}
+
+.btn-red__lunch, .btn-red__dinner, .btn-red__children, .btn-red__drinks {
+    grid-column: span 2;
+    width: 100%
+}
+
+.unfold-global__container {
+    display: grid;
+    padding-top: 3rem;
+    gap: 2rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". first first first . . second second second ."
+    ". third third third . . fourth fourth fourth ."
+    ". fifth fifth fifth . . sixth sixth sixth ."
+    ". seventh seventh seventh . . eighth eighth eighth ."
+    ". . recommend recommend recommend recommend recommend recommend . ."
+    ". . . . . . . . btn ."
+    ;
+}
+
+.unfold-dinner__container {
+    display: grid;
+    padding-top: 3rem;
+    gap: 2rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". first first first . . second second second ."
+    ". first first first . . third third third ."
+    ". fourth fourth fourth . . fifth fifth fifth ."
+    ". sixth sixth sixth . . seventh seventh seventh ."
+    ". . . . . . eighth eighth eighth ."
+    ". . recommend recommend recommend recommend recommend recommend . ."
+    ". . . . . . . . btn ."
+    ;
+}
+
+.unfold-lunch__fish, .unfold-lunch__season {
+    grid-area: first;
+}
+
+.unfold-lunch__green, .unfold-lunch__main-dish {
+    grid-area: third;
+}
+
+.unfold-lunch__meat, .unfold-lunch__firsts{
+    grid-area: second;
+}
+
+.unfold-lunch__cheese, .unfold-lunch__dry {
+    grid-area: fourth;
+}
+
+.unfold-lunch__dessert {
+    grid-area: fifth;
+}
+
+.unfold-lunch__snacks {
+    grid-area: sixth;
+}
+
+.unfold-lunch__w-coffee {
+    grid-area: seventh;
+}
+
+.unfold-lunch__extra-info {
+    grid-area: recommend;
+}
+
+.btn__global-styling-gold {
+    grid-area: btn;
+}
+
+.menu-lunch__download {
+    grid-area: btn;
+    margin: 2rem 0;
+}
+
+
 
 /* Menukort styling end */
 
