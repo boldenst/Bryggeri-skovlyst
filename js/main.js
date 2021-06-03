@@ -1,3 +1,6 @@
+// Funktionen til burger menu
+// Denne toggler classes på henholdsvis "menu" og "luk" knap
+// Der viser og skjuler menuen
 $("#burger-button").click(function(){
     $("#burger-menu").toggleClass("burger-menu--show");
   });
@@ -5,7 +8,12 @@ $("#burger-button").click(function(){
 $("#burger-close").click(function(){
     $("#burger-menu").toggleClass("burger-menu--show");
   });
+// Burger menu funktioner slut
 
+// Funktioner til menukortene
+// Denne toggler class på den man trykker på, for at vise det pågældende menukort
+// Og fjerne classes på alle de andre
+// Der viser og skjuler menuen
 $(document).ready(function() {
   $('.btn-red__lunch').click(function() {
     $('.btn-red__lunch').toggleClass('btn-red__global-styling--gold')
@@ -175,16 +183,6 @@ $(document).ready(function() {
     $('.btn-red__skovhus-arrow').removeClass('btn-red__arrow--gold')
   });
 });
-
-$(document).ready(function() {
-    $('.faq-button').click(function() {
-      $('.faq-button').toggleClass('less-faqs')
-      $('.faq-hide').toggleClass('faq-show')
-      $('.faq-mobile-hide').toggleClass('faq-show')
-    });
-});
-
-
 
 $(document).ready(function() {
   $('.btn-red__first').click(function() {
@@ -386,4 +384,14 @@ $(document).ready(function() {
   });
 });
 
+// Menukort funktioner slut
 
+// Funktion til at vise og skjule FAQ
+$(document).ready(function() {
+    $('.faq-button').click(function() {
+      $('.faq-button').toggleClass('less-faqs')
+      $('.faq-hide').toggleClass('faq-show')
+      $('.faq-mobile-hide').toggleClass('faq-show')
+    });
+});
+// FAQ Funktion slut
