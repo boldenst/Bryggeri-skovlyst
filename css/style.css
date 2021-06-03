@@ -274,6 +274,11 @@ body {
     margin-bottom: 1rem;
 }
 
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
 /* Text styling end*/
 
 
@@ -1046,7 +1051,12 @@ footer {
     background-position: bottom center;
 }
 
-.events {
+.meetings-packages__img {
+    width: 100%;
+    margin: 2rem 0 1rem 0;
+}
+
+.meetings {
     margin: 0 2rem;
 }
 
@@ -1060,9 +1070,13 @@ footer {
 }
 
 
+.unfold__early-meetings, .unfold__day-meetings, .unfold__allday-meetings {
+    padding: 0 1rem 1rem 1rem;
+    text-align: center;
+}
 
-.events__skovhus {
-
+.unfold__extras-meetings {
+    padding: 0 1rem 1rem 1rem;
 }
 
 .events-skovhus__img {
@@ -1071,6 +1085,32 @@ footer {
 
 .events-skovhus__img, .events-plan__img {
     margin-bottom: 1rem;
+}
+
+.meeting-menu-heading {
+    margin-top: 2rem;
+}
+
+.meeting-menu-time {
+    padding-top: 1rem;
+}
+
+.meeting-menu-description {
+    padding-top: 2rem;
+}
+
+.meeting-menu-text {
+    margin-top: 0.5rem;
+}
+
+.meeting-menu-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.meeting-menu-heading {
+    text-align: center;
 }
 
 
@@ -1781,27 +1821,27 @@ footer {
 
 /* Buttons styling start ---------------------------------*/
 
-.btn-red__lunch--desktop-first {
+.btn-red__lunch--desktop-first, .unfold__open--desktop-first {
     background-color: #fff;
     outline: 0.1rem solid #c8a374;
 }
 
-.unfold__lunch--desktop-first {
+.unfold__lunch--desktop-first, .unfold__open--desktop-first {
     display: block;
 }
 
-.btn-red__lunch-text--desktop-first {
+.btn-red__lunch-text--desktop-first, .btn-red__open-text--desktop-first {
     color: #c8a374;
 }
 
-.btn-red__lunch-arrow-container--desktop-first {
+.btn-red__lunch-arrow-container--desktop-first, .btn-red__open-arrow-container--desktop-first {
     width: 2rem;
     height: 2rem;
     float: right;
     background-color: #fff;
 }
 
-.btn-red__lunch-arrow--desktop-first {
+.btn-red__lunch-arrow--desktop-first, .btn-red__open-arrow--desktop-first {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1822,7 +1862,7 @@ footer {
     }
 }
 
-.btn-red__lunch-arrow--desktop-first::before {
+.btn-red__lunch-arrow--desktop-first::before, .btn-red__open-arrow--desktop-first::before {
     content: '';
     position: absolute;
     width: 1rem;
@@ -1833,7 +1873,7 @@ footer {
     margin-left: 0.25rem;
 }
 
-.btn-red__lunch-arrow--desktop-first::after {
+.btn-red__lunch-arrow--desktop-first::after, .btn-red__open-arrow--desktop-first::after {
     content: '';
     position: absolute;
     width: 1rem;
@@ -2084,7 +2124,7 @@ footer {
     grid-template-rows: auto;
 }
 
-.btn-red__lunch, .btn-red__dinner, .btn-red__children, .btn-red__drinks {
+.btn-red__lunch, .btn-red__dinner, .btn-red__children, .btn-red__drinks, .btn-red__first , .btn-red__second, .btn-red__third, .btn-red__fourth {
     grid-column: span 2;
     width: 100%
 }
@@ -2687,37 +2727,21 @@ footer {
     grid-area: text;
 }
 
-.events__skovhus {
-    margin: 3rem 0;
-    width: 100%;
+.unfold__early-meetings, .unfold__day-meetings, .unfold__allday-meetings, .unfold__extras-meetings {
+    padding: 1rem;
+    grid-area: menu;
+}
+
+.unfold-early-meetings__grid, .unfold-day-meetings__grid, .unfold-allday-meetings__grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    column-gap: 2rem;
-    grid-template-areas: 
-    ". heading heading heading heading . img img img img img ."
-    ". underline underline underline underline . img img img img img ."
-    ". text text text text . img img img img img ."
-    ". . . . . . img img img img img ."
-    ;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
 }
-
-.events-skovhus__img {
-    width: 100%;
-    grid-area: img;
-    margin-bottom: 0;
-}
-
-.events-skovhus__heading {
-    grid-area: heading;
-}
-
-.events-skovhus__underline {
-    grid-area: underline;
-}
-
-.events-skovhus__text {
-    grid-area: text;
+.unfold-extras-meetings__grid{
+    display: grid;
+    margin: 0 auto;
+    width: 50%;
 }
 
 /* Møder og konferencer styling end */
