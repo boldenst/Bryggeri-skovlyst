@@ -217,6 +217,12 @@ $(document).ready(function() {
     $('.btn-red__fourth-text').removeClass('btn-red__text--gold')
     $('.btn-red__fourth-arrow-container').removeClass('btn-red__arrow-container--gold')
     $('.btn-red__fourth-arrow').removeClass('btn-red__arrow--gold')
+
+    $('.btn-red__fifth').removeClass('btn-red__global-styling--gold')
+    $('.unfold__fifth').removeClass('unfold__global--show')
+    $('.btn-red__fifth-text').removeClass('btn-red__text--gold')
+    $('.btn-red__fifth-arrow-container').removeClass('btn-red__arrow-container--gold')
+    $('.btn-red__fifth-arrow').removeClass('btn-red__arrow--gold')
   });
 });
 
@@ -251,6 +257,12 @@ $(document).ready(function() {
     $('.btn-red__fourth-text').removeClass('btn-red__text--gold')
     $('.btn-red__fourth-arrow-container').removeClass('btn-red__arrow-container--gold')
     $('.btn-red__fourth-arrow').removeClass('btn-red__arrow--gold')
+
+    $('.btn-red__fifth').removeClass('btn-red__global-styling--gold')
+    $('.unfold__fifth').removeClass('unfold__global--show')
+    $('.btn-red__fifth-text').removeClass('btn-red__text--gold')
+    $('.btn-red__fifth-arrow-container').removeClass('btn-red__arrow-container--gold')
+    $('.btn-red__fifth-arrow').removeClass('btn-red__arrow--gold')
   });
 });
 
@@ -285,6 +297,12 @@ $(document).ready(function() {
     $('.btn-red__fourth-text').removeClass('btn-red__text--gold')
     $('.btn-red__fourth-arrow-container').removeClass('btn-red__arrow-container--gold')
     $('.btn-red__fourth-arrow').removeClass('btn-red__arrow--gold')
+
+    $('.btn-red__fifth').removeClass('btn-red__global-styling--gold')
+    $('.unfold__fifth').removeClass('unfold__global--show')
+    $('.btn-red__fifth-text').removeClass('btn-red__text--gold')
+    $('.btn-red__fifth-arrow-container').removeClass('btn-red__arrow-container--gold')
+    $('.btn-red__fifth-arrow').removeClass('btn-red__arrow--gold')
   });
 });
 
@@ -319,6 +337,53 @@ $(document).ready(function() {
     $('.btn-red__first-text').removeClass('btn-red__text--gold')
     $('.btn-red__first-arrow-container').removeClass('btn-red__arrow-container--gold')
     $('.btn-red__first-arrow').removeClass('btn-red__arrow--gold')
+
+    $('.btn-red__fifth').removeClass('btn-red__global-styling--gold')
+    $('.unfold__fifth').removeClass('unfold__global--show')
+    $('.btn-red__fifth-text').removeClass('btn-red__text--gold')
+    $('.btn-red__fifth-arrow-container').removeClass('btn-red__arrow-container--gold')
+    $('.btn-red__fifth-arrow').removeClass('btn-red__arrow--gold')
   });
 });
+
+$(document).ready(function() {
+  $('.btn-red__fifth').click(function() {
+    $('.btn-red__fifth').toggleClass('btn-red__global-styling--gold')
+    $('.unfold__fifth').toggleClass('unfold__global--show')
+    $('.btn-red__fifth-text').toggleClass('btn-red__text--gold')
+    $('.btn-red__fifth-arrow-container').toggleClass('btn-red__arrow-container--gold')
+    $('.btn-red__fifth-arrow').toggleClass('btn-red__arrow--gold')
+
+    $('.btn-red__lunch--desktop-first').removeClass('btn-red__lunch--desktop-first')
+    $('.unfold__lunch--desktop-first').removeClass('unfold__lunch--desktop-first')
+    $('.btn-red__lunch-text--desktop-first').removeClass('btn-red__lunch-text--desktop-first')
+    $('.btn-red__lunch-arrow-container--desktop-first').removeClass('btn-red__lunch-arrow-container--desktop-first')
+    $('.btn-red__lunch-arrow--desktop-first').removeClass('btn-red__lunch-arrow--desktop-first')
+
+    $('.btn-red__third').removeClass('btn-red__global-styling--gold')
+    $('.unfold__third').removeClass('unfold__global--show')
+    $('.btn-red__third-text').removeClass('btn-red__text--gold')
+    $('.btn-red__third-arrow-container').removeClass('btn-red__arrow-container--gold')
+    $('.btn-red__third-arrow').removeClass('btn-red__arrow--gold')
+
+    $('.btn-red__second').removeClass('btn-red__global-styling--gold')
+    $('.unfold__second').removeClass('unfold__global--show')
+    $('.btn-red__second-text').removeClass('btn-red__text--gold')
+    $('.btn-red__second-arrow-container').removeClass('btn-red__arrow-container--gold')
+    $('.btn-red__second-arrow').removeClass('btn-red__arrow--gold')
+
+    $('.btn-red__first').removeClass('btn-red__global-styling--gold')
+    $('.unfold__first').removeClass('unfold__global--show')
+    $('.btn-red__first-text').removeClass('btn-red__text--gold')
+    $('.btn-red__first-arrow-container').removeClass('btn-red__arrow-container--gold')
+    $('.btn-red__first-arrow').removeClass('btn-red__arrow--gold')
+
+    $('.btn-red__fourth').removeClass('btn-red__global-styling--gold')
+    $('.unfold__fourth').removeClass('unfold__global--show')
+    $('.btn-red__fourth-text').removeClass('btn-red__text--gold')
+    $('.btn-red__fourth-arrow-container').removeClass('btn-red__arrow-container--gold')
+    $('.btn-red__fourth-arrow').removeClass('btn-red__arrow--gold')
+  });
+});
+
 
