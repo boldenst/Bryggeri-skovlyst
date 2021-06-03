@@ -2747,12 +2747,7 @@ footer {
     grid-area: menu;
 }
 
-.unfold-early-meetings__grid, .unfold-day-meetings__grid, .unfold-allday-meetings__grid {
-    display: grid;
-    margin: 0 auto;
-    width: 50%;
-    text-align: center;
-}
+
 .unfold-extras-meetings__grid{
     display: grid;
     margin: 0 auto;
