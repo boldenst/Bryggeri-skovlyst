@@ -1297,21 +1297,9 @@ footer {
 
 /* Buffet styling start */
 
-.sub-global-grid {
-    display: grid;
-    padding-top: 2rem;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-    "dishes dishes dishes dishes dishes dishes dishes dishes dishes dishes"
-    ". . . . . . . . btn btn"
-    ;
-}
-
 .sub-global-menu {
-    grid-area: dishes;
-    width: 50%;
-    margin: 0 auto;
+    width: auto;
+    margin: 0 1rem;
 }
 
 /* Buffet styling end */
@@ -3031,6 +3019,27 @@ footer {
     grid-template-rows: auto;
     grid-template-areas: 
     ". menu menu menu menu menu menu menu menu menu menu .";
+}
+
+.sub-global-grid {
+    display: grid;
+    padding-top: 2rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "dishes dishes dishes dishes dishes dishes dishes dishes dishes dishes"
+    ". . . . . . . . btn btn"
+    ;
+}
+
+.sub-global-menu {
+    grid-area: dishes;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.unfold__pad {
+    padding: 1rem;
 }
 
 /* Buffet styling end */
