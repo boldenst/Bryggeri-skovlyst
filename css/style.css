@@ -818,7 +818,6 @@ footer {
     grid-area: info;
     margin: 0;
     display: grid;
-    row-gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
@@ -1078,12 +1077,6 @@ footer {
 
 .events-plan__img {
     width: 100%;
-}
-
-
-
-.events__skovhus {
-
 }
 
 .events-skovhus__img {
@@ -1816,7 +1809,7 @@ footer {
 
 .hero-image-global {
     margin-left: 19rem;
-    height: 20rem;
+    height: 20.6rem;
     width: calc(100vw - 19rem);
     background-repeat: no-repeat;
     background-size: 100%;
