@@ -1464,11 +1464,15 @@ footer {
     margin: 0 2rem 0 2rem;
 }
 
-/* Vores historie styling end */
+/* Vores historie styling end------------------------------ */
 
 
 
-/* Booking styling start */
+/* Booking styling start -----------------------------------*/
+/* Udgangspunktet for denne bookingside, er taget fra et tidligere projekt (UX)
+   I det nævnte projekt, var alle gruppemedlemmer de samme
+   Det er dog ændret til at passe til stylingen af dette projekt.
+   Kalenderen, og dens grid er de primære elementer der er kopieret*/
 
 .booking {
     margin: 3rem 2rem;
