@@ -144,10 +144,6 @@ body {
     transition: 0.5s;
 }
 
-.burger-menu-logo {
-
-}
-
 #burger-close {
     color: var(--color-white);
     font-size: 3rem;
@@ -188,10 +184,6 @@ body {
     border-radius: 0.5rem;
 }
 
-.burger-menu-nav {
-
-}
-
 .burger-menu__nav-list {
     display: flex;
     flex-direction: column;    
@@ -207,9 +199,6 @@ body {
     font-family: var(--font-text);
     text-transform: uppercase;
     font-size: 1.3rem;
-}
-
-.burger-menu__nav__list-item--current {
 }
 
 .burger-menu__nav__list__link, .burger-menu-booking {
@@ -231,13 +220,13 @@ body {
 /* Menu styling end -----------------------------------*/
 
 /* Global Text styling start -------------------------------- */
- 
+
 .main-heading-global {
     font-family: var(--font-heading);
     text-transform: uppercase;
     font-size: 1.8rem;
     color: var(--color-black);
- }
+}
 
 .sub-heading-global {
     font-family: var(--font-heading);
@@ -251,6 +240,7 @@ body {
     background-color: var(--color-secondary);
     width: 4rem;
     margin-bottom: 0.6rem;
+    margin-top: 0.5rem;
 }
 
 .main-text-global {
@@ -266,6 +256,27 @@ body {
 .menus-heading-global {
     text-decoration: underline;
     text-transform: uppercase;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.centered {
+    text-align: center;
+}
+
+.main-text-global--mtop {
+    margin-top: 1rem;
+}
+
+.mbot {
+    margin-bottom: 1rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
 }
 
 /* Text styling end*/
@@ -305,6 +316,9 @@ body {
 
 .btn__text {
     color: #880005;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .btn__global-styling:hover .btn__text-container {
@@ -312,7 +326,8 @@ body {
 }
 
 .btn__global-styling:hover .btn__text-container .btn__text {
-    color: #fff;
+    color: var(--color-white);
+    font-family: var(--font-heading);
 }
 
 .btn__global-styling-gold {
@@ -325,6 +340,8 @@ body {
     border: none;
     outline: 0.1rem solid #c8a374;
     cursor: pointer;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
 }
 
 .btn__leaf-container-gold {
@@ -393,17 +410,18 @@ body {
 }
 
 .btn-red__arrow-container {
-    width: 3rem;
+    width: 2rem;
     height: 2rem;
     float: right;
     background-color: #880005;
 }
 
 .btn-red__arrow-container--gold {
-    width: 3rem;
+    width: 2rem;
     height: 2rem;
     float: right;
     background-color: #fff;
+    overflow: hidden;
 }
 
 .btn-red__arrow {
@@ -494,8 +512,8 @@ body {
 .unfold__global {
     display: none;
     margin-top: 1rem;
-    width: 40rem;
-    height: 30rem;
+    width: 100%;
+    height: 100%;
     outline: 0.1rem solid #c8a374;
 }
 
@@ -514,6 +532,7 @@ body {
 }
 
 footer {
+    margin-top: 5rem;
     background-color: var(--color-third);
     width: 100vw;
     display: grid;
@@ -722,13 +741,107 @@ footer {
 
 
 /* Menukort styling start */
+.menu-hero-image {
+    background-image: url(../images/oel-hero.jpg);
+}
+
+.menu-info-container {
+    grid-area: info;
+    margin: 0;
+    display: grid;
+    row-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "head head head head"
+    "menu-info menu-info menu-info menu-info"
+    "menu-cont menu-cont menu-cont menu-cont"
+    "opening opening opening opening"
+    ;
+}
+
+.menu-grid-container {
+    display: grid;
+    margin: 0 2rem;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "info info info info"
+    "menu-cont menu-cont menu-cont menu-cont"
+    ;
+}
+
+.menu-info__heading {
+    grid-area: head;
+}
+
+
+.menu-info-container__left {
+    grid-area: menu-info;
+}
+
+.menu-container {
+    grid-area: menu-cont;
+}
+
+.menu-info-container__right {
+    grid-area: opening;
+}
+
+.menu-toggles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.unfold-global__container, .unfold-dinner__container, .unfold-children__container, .unfold-drinks__container {
+    padding: 1rem;
+}
+
+.unfold-lunch__dishes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.unfold-lunch__dishes-divided {
+    width: 80%;
+}
+
+.menu-price__btm {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.menu-price__multiple {
+    margin-top: 1.5rem;
+    text-align: right;
+}
+
+.unfold-lunch__extra-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.unfold-lunch__extra-info p {
+    margin-top: 1rem;
+}
+
+.menu-lunch__download {
+    display: flex;
+    margin: 2rem auto;
+}
 
 /* Menukort styling end */
 
 
 
 /* Øl styling start */
-.oel-hero-image {
+.menu-hero-image {
     background-image: url(../images/oel-hero.jpg);
 }
 
@@ -879,6 +992,55 @@ footer {
 
 
 /* Oplevelser styling start */
+.events-hero-image {
+    background-image: url(../images/selskab-bryggeriet.jpg);
+    background-size: 100%;
+    background-position: bottom center;
+}
+
+.events {
+    margin: 0 2rem;
+}
+
+.events__plan {
+    margin: 3rem 0;
+
+}
+
+.events-plan__img {
+    width: 100%;
+}
+
+
+
+.events__skovhus {
+
+}
+
+.events-skovhus__img {
+    width: 100%;
+}
+
+.events-skovhus__img, .events-plan__img {
+    margin-bottom: 1rem;
+}
+
+.unfold__skovhus {
+    padding: 1rem;
+}
+
+.events-menu-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.events-menu-toggles {
+    margin: 1rem auto 0 auto;
+}
+
+.btn-red__skovhus, .btn-red__ice {
+    margin: 1rem 0;
+}
 
 /* Oplevelser styling end */
 
@@ -886,11 +1048,167 @@ footer {
 
 /* Møder og konferencer styling start */
 
+.meetings-hero-image {
+    background-image: url(../images/selskab-bryggeriet.jpg);
+    background-size: 100%;
+    background-position: bottom center;
+}
+
+.meetings-packages__img {
+    width: 100%;
+    margin: 2rem 0 1rem 0;
+}
+
+.meetings {
+    margin: 0 2rem;
+}
+
+.events__plan {
+    margin: 3rem 0;
+
+}
+
+.events-plan__img {
+    width: 100%;
+}
+
+
+.unfold__early-meetings, .unfold__day-meetings, .unfold__allday-meetings {
+    padding: 0 1rem 1rem 1rem;
+    text-align: center;
+}
+
+.unfold__extras-meetings {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.events-skovhus__img {
+    width: 100%;
+}
+
+.events-skovhus__img, .events-plan__img {
+    margin-bottom: 1rem;
+}
+
+.meeting-menu-heading {
+    margin-top: 2rem;
+}
+
+.meeting-menu-time {
+    padding-top: 1rem;
+}
+
+.meeting-menu-description {
+    padding-top: 2rem;
+}
+
+.meeting-menu-text {
+    margin-top: 0.5rem;
+}
+
+.meeting-menu-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.meeting-menu-heading {
+    text-align: center;
+}
+
+
 /* Møder og konferencer styling end */
 
 
 
 /* Selskaber styling start */
+
+.parties-hero-image {
+    background-image: url(../images/selskab-bryggeriet.jpg);
+    background-size: 100%;
+    background-position: bottom center;
+}
+
+.parties {
+    margin: 0 2rem;
+}
+
+.parties__season {
+    margin: 3rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    "img img"
+    "heading heading"
+    "underline underline"
+    "text text"
+    "button-party-menu button-buffet";
+}
+
+.parties-season__img {
+    width: 100%;
+    grid-area: img;
+    margin-bottom: 1rem;
+}
+
+.parties-season__heading {
+    grid-area: heading;
+}
+
+.parties-season__underline {
+    grid-area: underline;
+}
+
+.parties-season__text {
+    grid-area: text;
+}
+
+.parties-season__button-party-menu {
+    width: 100%;
+    font-size: 0.7rem;
+    grid-area: button-party-menu;
+}
+
+.parties-season__button-buffet {
+    width: 100%;
+    font-size: 0.7rem;
+    grid-area: button-buffet;
+}
+
+.parties__checklist {
+    margin: 3rem 0 0 0;
+}
+
+
+.parties-checklist__list {
+    list-style: none;
+}
+
+.parties-checklist-list__item {
+    margin: 0.3rem 0;
+}
+
+.bread-crumb {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    font-family: var(--font-text);
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--color-black);
+    grid-area: bread-crumb;
+}
+
+.bread-crumb > p {
+    margin-left: 0.4rem;
+}
+
+.bread-crumb > a {
+    color: var(--color-black);
+}
 
 /* Selskaber styling end */
 
@@ -898,11 +1216,39 @@ footer {
 
 /* Selskabsmenu styling start */
 
+.parties-party-menu-hero-image {
+   background-image: url(../images/bryggeri-skovlyst.jpg);
+   margin: 0; 
+}
+
+.parties-party-menu {
+    margin: 0 2rem;
+}
+
+
+
 /* Selskabsmenu styling end */
 
 
 
 /* Buffet styling start */
+
+.sub-global-grid {
+    display: grid;
+    padding-top: 2rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "dishes dishes dishes dishes dishes dishes dishes dishes dishes dishes"
+    ". . . . . . . . btn btn"
+    ;
+}
+
+.sub-global-menu {
+    grid-area: dishes;
+    width: 50%;
+    margin: 0 auto;
+}
 
 /* Buffet styling end */
 
@@ -964,7 +1310,6 @@ footer {
 }
 
 .faq-container {
-    height: 27rem;
     overflow: hidden;
 }
 
@@ -1000,6 +1345,39 @@ footer {
     display: none;
 }
 
+.contact__hours-hours {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.2rem 0;
+}
+
+.contact-grid-container-hours__open {
+    margin-top: 1.5rem;
+}
+
+.contact-grid-container-hours__kitchen {
+    margin: 1rem 0;
+}
+
+.contact-grid-container-hours__night {
+    margin-top: 1rem;
+}
+
+.faq-mobile-hide {
+    display: none;
+}
+
+.faq-hide {
+    display: none;
+}
+
+.faq-show {
+    display: flex;
+}
+
+
+
 /* Kontakt og info styling end */
 
 
@@ -1024,6 +1402,314 @@ footer {
 
 /* Booking styling start */
 
+.booking {
+    margin: 3rem 2rem;
+}
+
+.calender {
+    width: 100%;
+    margin: 1rem 0;
+    border: 0.15rem solid var(--color-secondary);
+    font-family: var(--font-text);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.calender__dropdown {
+    margin-top: 1rem;
+    width: 100%;
+    border: 2px solid var(--color-primary);
+    overflow: hidden;
+    position: relative;
+}
+
+
+.calender__dropdown-box {
+    width: 100%;
+    position: relative;
+    height: 1px;
+    margin-bottom: 1rem;
+}
+
+.calender__dropdown-box:after {
+    content: '';
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    transform: rotate(135deg);
+    width: 0.8rem;
+    height: 0.8rem;
+    right: 9px;
+    top: -1.7rem;
+    position: absolute;
+}
+
+.calender__dropdown-box:before {
+    content: '';
+    background-color: var(--color-primary);
+    width: 2rem;
+    height: 2rem;
+    right: 2px;
+    top: -2.1rem;
+    position: absolute;
+}
+
+.calender-dropdown__selector {
+    width: 100%;
+    color: var(--color-black);
+    padding: 0.3rem;
+    font-family: var(--font-text);
+    font-size: 1rem;
+    border: none;
+}
+
+
+
+.calender-dropdown__label {
+    position:relative;
+    width: 20rem;
+}
+
+.calender-left__wrapper, .calender-right__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+
+.calender-dropdown__selector {
+    width: 100%;
+}
+
+
+.calender-sub-heading {
+    color: var(--color-secondary);
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+.calender-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 0 0 0;
+    width: 100%;
+}
+
+.calender-month {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.calender__month-btn {
+    width: 2rem;
+    height: 2rem;
+}
+
+.delivery-next-month {
+    
+}
+
+.calender__prev-month {
+    margin-top: 0.1rem;
+    transform: rotate(180deg);
+}
+
+.calender-days {
+    gap: 0.1rem;
+    row-gap: 0.3rem;
+    margin: 1.3rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "mon tue wed thur fri sat sun"
+    ". date1 date2 date3 date4 date5 date6"
+    "date7 date8 date9 date10 date11 date12 date13"
+    "date14 date15 date16 date17 date18 date19 date20"
+    "date21 date22 date23 date24 date25 date26 date27"
+    "date28 date29 date30 . . . .";
+}
+
+.calender-days > p {
+    font-size: 0.9rem;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.calender-weekdays {
+    color: var(--color-secondary);
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+.date {
+    color: var(--color-secondary);
+    padding: 0.4rem;
+    cursor: pointer;
+    background-color: #EBEBEB;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+}
+
+.delivery-date {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    font-weight: 500;
+}
+
+.monday {
+    grid-area: mon;
+}
+.tuesday {
+    grid-area: tue;
+}
+.wednesday {
+    grid-area: wed;
+}
+.thursday {
+    grid-area: thur;
+}
+.friday {
+    grid-area: fri;
+}
+.saturday {
+    grid-area: sat;
+}
+.sunday {
+    grid-area: sun;
+}
+.date1 {
+    grid-area: date1;
+}
+.date2 {
+    grid-area: date2;
+}
+.date3 {
+    grid-area: date3;
+}
+.date4 {
+    grid-area: date4;
+}
+.date5 {
+    grid-area: date5;
+}
+.date6 {
+    grid-area: date6;
+}
+.date7 {
+    grid-area: date7;
+}
+.date8 {
+    grid-area: date8;
+}
+.date9 {
+    grid-area: date9;
+}
+.date10 {
+    grid-area: date10;
+}
+.date11 {
+    grid-area: date11;
+}
+.date12 {
+    grid-area: date12;
+}
+.date13 {
+    grid-area: date13;
+}
+.date14 {
+    grid-area: date14;
+}
+.date15 {
+    grid-area: date15;
+}
+.date16 {
+    grid-area: date16;
+}
+.date17 {
+    grid-area: date17;
+}
+.date18 {
+    grid-area: date18;
+}
+.date19 {
+    grid-area: date19;
+}
+.date20 {
+    grid-area: date20;
+}
+.date21 {
+    grid-area: date21;
+}
+.date22 {
+    grid-area: date22;
+}
+.date23 {
+    grid-area: date23;
+}
+.date24 {
+    grid-area: date24;
+}
+.date25 {
+    grid-area: date25;
+}
+.date26 {
+    grid-area: date26;
+}
+.date27 {
+    grid-area: date27;
+}
+.date28 {
+    grid-area: date28;
+}
+.date29 {
+    grid-area: date29;
+}
+.date30 {
+    grid-area: date30;
+}
+
+.calender-time {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.time {
+    display: block;
+    background-color: #EBEBEB;
+    color: var(--color-secondary);
+    border-radius: 0.2rem;
+}
+
+.calender-button {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding: 0.5em 0;
+    font-size: 1rem;
+    background-color: var(--color-primary);
+    border: none;
+    outline: 0.1rem solid var(--color-primary);
+    cursor: pointer;
+    font-family: var(--font-text);
+    color: var(--color-white);
+}
+
 /* Booking styling end */
 
 
@@ -1034,7 +1720,27 @@ footer {
     display: none;
 }
 
+
 /* Header styling end -----------------------------------*/
+
+/* Hero image styling start -----------------------------------*/
+
+
+.header-spacer-global {
+    display: none;
+}
+
+.hero-image-global {
+    margin-left: 19rem;
+    height: 20rem;
+    width: calc(100vw - 19rem);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 2.5rem;
+    background-position: center;
+}
+
+/* Hero image styling end -----------------------------------*/
 
 
 
@@ -1135,6 +1841,68 @@ footer {
 
 /* Buttons styling start ---------------------------------*/
 
+.btn-red__lunch--desktop-first, .unfold__open--desktop-first {
+    background-color: #fff;
+    outline: 0.1rem solid #c8a374;
+}
+
+.unfold__lunch--desktop-first, .unfold__open--desktop-first {
+    display: block;
+}
+
+.btn-red__lunch-text--desktop-first, .btn-red__open-text--desktop-first {
+    color: #c8a374;
+}
+
+.btn-red__lunch-arrow-container--desktop-first, .btn-red__open-arrow-container--desktop-first {
+    width: 2rem;
+    height: 2rem;
+    float: right;
+    background-color: #fff;
+}
+
+.btn-red__lunch-arrow--desktop-first, .btn-red__open-arrow--desktop-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    animation-name: arrow-rotate-clockwise--desktop-first;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes arrow-rotate-clockwise--desktop-first {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+.btn-red__lunch-arrow--desktop-first::before, .btn-red__open-arrow--desktop-first::before {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 0.2rem;
+    background-color: #c8a374;
+    transform: rotate(45deg);
+    margin-top: 0.7rem;
+    margin-left: 0.25rem;
+}
+
+.btn-red__lunch-arrow--desktop-first::after, .btn-red__open-arrow--desktop-first::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 0.2rem;
+    background-color: #c8a374;
+    transform: rotate(-45deg);
+    margin-top: 1.225rem;
+    margin-left: 0.25rem;
+}
 
 /* Buttons styling end -----------------------------------*/
 
@@ -1144,7 +1912,7 @@ footer {
 footer {
     background-color: var(--color-third);
     width: calc(100vw - 19rem);
-    margin-left: 19rem;
+    margin: 5rem 0 0 19rem;
     gap: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1176,9 +1944,27 @@ footer {
     margin-left: 19rem;
 }
 
+.main-hero-image__grid-wrap {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". heading heading heading heading . . . . . . ."
+    ". text text text text . . . . . . .";
+}
+
+.heading--white {
+    grid-area: heading;
+}
+
+.text--white {
+    grid-area: text;
+}
+
 .text-centered {
     text-align: left;
-    margin-left: 25rem;
+    margin: 0;
     width: 25rem;
 }
 
@@ -1197,7 +1983,10 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 15rem;
+    height: 19.1rem;
+}
+
+.main__info--margin {
     margin-left: 2rem;
 }
 
@@ -1210,12 +1999,12 @@ footer {
 .main__wrapper {
     margin-top: 8rem;
     display: grid;
-    row-gap: 4rem;
+    row-gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    ". img img img img info info info info info . ."
-    ". info-rev info-rev info-rev info-rev info-rev . img-rev img-rev img-rev img-rev ."
+    ". img img img img img info info info info . ."
+    ". info-rev info-rev info-rev info-rev . img-rev img-rev img-rev img-rev img-rev ."
     ;
 }
 
@@ -1284,6 +2073,278 @@ footer {
 
 
 /* Menukort styling start */
+
+.menu-grid-container {
+    width: calc(100vw - 19rem);
+    margin: 0 0 0 19rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". info info info info info info info info info info ."
+    ". menu menu menu menu menu menu menu menu menu menu ."
+    ;
+}
+
+.menu-info-container {
+    margin-bottom: 2rem;
+    grid-area: info;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "head head head head head head head head head head"
+    "info-l info-l info-l info-l info-l info-l . info-r info-r info-r"
+    ;
+}
+
+.menu-info__heading {
+    grid-area: head;
+}
+
+.menu-info-container__left {
+    grid-area: info-l;
+}
+
+.menu-info-container__right {
+    grid-area: info-r;
+}
+
+.opening-hours__hours {
+    display: flex;
+    flex-direction: column;
+}
+
+.opening-hours-container {
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.opening-hours__hours-lunch{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-container {
+    grid-area: menu;
+}
+
+.menu-toggles {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-toggles__grid {
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+}
+
+.btn-red__lunch, .btn-red__dinner, .btn-red__children, .btn-red__drinks, .btn-red__first , .btn-red__second, .btn-red__third, .btn-red__fourth, .btn-red__fifth {
+    grid-column: span 2;
+    width: 100%
+}
+
+.unfold-global__container {
+    display: grid;
+    padding-top: 3rem;
+    gap: 2rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". first first first . . second second second ."
+    ". third third third . . fourth fourth fourth ."
+    ". fifth fifth fifth . . sixth sixth sixth ."
+    ". seventh seventh seventh . . eighth eighth eighth ."
+    ". . recommend recommend recommend recommend recommend recommend . ."
+    ". . . . . . . . btn ."
+    ;
+}
+
+.unfold-dinner__container {
+    display: grid;
+    padding-top: 3rem;
+    gap: 2rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". first first first . . second second second ."
+    ". first first first . . third third third ."
+    ". fourth fourth fourth . . fifth fifth fifth ."
+    ". sixth sixth sixth . . seventh seventh seventh ."
+    ". . . . . . eighth eighth eighth ."
+    ". . recommend recommend recommend recommend recommend recommend . ."
+    ". . . . . . . . btn ."
+    ;
+}
+
+.unfold-children__container {
+    display: grid;
+    padding-top: 3rem;
+    gap: 2rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". . . first first first first . . ."
+    ". . . . . . . . btn ."
+    ;
+}
+
+.unfold-drinks__container {
+    display: grid;
+    padding-top: 3rem;
+    gap: 2rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". soft soft soft . . nobub nobub nobub ."
+    ". water water water . . coffee coffee coffee ."
+    ". tea tea tea . . . . . ."
+    ". beer beer beer . . dk dk dk ."
+    ". beer beer beer . . mous mous mous ."
+    ". beer beer beer . . rose rose rose ."
+    ". whte whte whte . . red-wine red-wine red-wine ."
+    ". port port port . . red-wine red-wine red-wine ."
+    ". dessert dessert dessert . . cognac cognac cognac ."
+    ". arma arma arma . . grappa grappa grappa ."
+    ". whisky whisky whisky . . rum rum rum ."
+    ". vodka vodka vodka . . rum rum rum ."
+    ". mix mix mix . . . . . ."
+    ". . recommend recommend recommend recommend recommend recommend . ."
+    ". . . . . . . . btn ."
+    ;
+}
+
+
+.unfold-lunch__fish, .unfold-lunch__season, .unfold-lunch__child-dish{
+    grid-area: first;
+}
+
+.unfold-lunch__green, .unfold-lunch__main-dish {
+    grid-area: third;
+}
+
+.unfold-lunch__meat, .unfold-lunch__firsts {
+    grid-area: second;
+}
+
+.unfold-lunch__cheese, .unfold-lunch__dry {
+    grid-area: fourth;
+}
+
+.unfold-lunch__dessert {
+    grid-area: fifth;
+}
+
+.unfold-lunch__snacks {
+    grid-area: sixth;
+}
+
+.unfold-lunch__w-coffee {
+    grid-area: seventh;
+}
+
+.unfold-lunch__extra-info {
+    grid-area: recommend;
+}
+
+
+
+.unfold-lunch__soft-drinks {
+    grid-area: soft;
+}
+
+.unfold-lunch__soft-drinks-no-bubbles {
+    grid-area: nobub;
+}
+
+.unfold-lunch__water {
+    grid-area: water;
+}
+
+.unfold-lunch__coffee {
+    grid-area: coffee;
+}
+
+.unfold-lunch__tea {
+    grid-area: tea;
+}
+
+.unfold-lunch__beer {
+    grid-area: beer;
+}
+
+.unfold-lunch__dk-wine {
+    grid-area: dk;
+}
+
+.unfold-lunch__mous-wine {
+    grid-area: mous;
+}
+
+.unfold-lunch__white-wine {
+    grid-area: whte;
+}
+
+.unfold-lunch__rosé {
+    grid-area: rose;
+}
+
+.unfold-lunch__red-wine {
+    grid-area: red-wine;
+}
+
+.unfold-lunch__dessert-wine {
+    grid-area: dessert;
+}
+
+.unfold-lunch__port {
+    grid-area: port;
+}
+
+.unfold-lunch__cognac {
+    grid-area: cognac;
+}
+
+.unfold-lunch__armagnac {
+    grid-area: arma;
+}
+
+.unfold-lunch__grappa {
+    grid-area: grappa;
+}
+
+.unfold-lunch__whisky {
+    grid-area: whisky;
+}
+
+.unfold-lunch__mixed {
+    grid-area: mix;
+}
+
+.unfold-lunch__rum {
+    grid-area: rum;
+}
+
+.unfold-lunch__vodka {
+    grid-area: vodka;
+}
+
+.btn__global-styling-gold {
+    grid-area: btn;
+}
+
+.menu-lunch__download {
+    grid-area: btn;
+    margin: 2rem 0;
+}
+
+
+
 
 /* Menukort styling end */
 
@@ -1368,7 +2429,7 @@ footer {
     ". . baeveren baeveren baeveren . svanen svanen svanen . ."
     ". . raeven raeven raeven . uglen uglen uglen . ."
     ". . storken storken storken . guldsmeden guldsmeden guldsmeden . ."
-    ". . . . . . . . button button ."
+    ". . . . . . . . . button button"
     ;
 }
 
@@ -1455,11 +2516,248 @@ footer {
 
 /* Oplevelser styling start */
 
+.events-hero-image {
+    background-image: url(../images/selskab-bryggeriet.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+.events {
+    width: calc(100vw - 19rem);
+    margin: 0 0 0 19rem;
+}
+
+.events__intro {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". heading heading heading heading . . . . . . ."
+    ". underline underline underline . . . . . . . ."
+    ". text text text text . . . . . . .";
+}
+
+.events-intro__heading {
+    grid-area: heading;
+}
+
+.events-intro__underline {
+    grid-area: underline;
+}
+
+.events-intro__text {
+    grid-area: text;
+}
+
+.events__plan {
+    margin: 3rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    column-gap: 2rem;
+    grid-template-areas: 
+    ". img img img img img heading heading heading heading heading ."
+    ". img img img img img underline underline underline underline underline ."
+    ". img img img img img text text text text text ."
+    ". img img img img img . . . . . ."
+    ". img img img img img button button . . . ."
+    ;
+}
+
+.events-plan__img {
+    width: 100%;
+    grid-area: img;
+    margin-bottom: 0;
+}
+
+.events-plan__heading {
+    grid-area: heading;
+}
+
+.events-plan__underline {
+    grid-area: underline;
+}
+
+.events-plan__text {
+    grid-area: text;
+}
+
+.events-plan__button {
+    margin-bottom: 1.65rem;
+    grid-area: button;
+    text-align: center;
+}
+
+.events__skovhus {
+    margin: 3rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    column-gap: 2rem;
+    grid-template-areas: 
+    ". heading heading heading heading . img img img img img ."
+    ". underline underline underline underline . img img img img img ."
+    ". text text text text . img img img img img ."
+    ". . . . . . img img img img img ."
+    ;
+}
+
+.events-skovhus__img {
+    width: 100%;
+    grid-area: img;
+    margin-bottom: 0;
+}
+
+.events-skovhus__heading {
+    grid-area: heading;
+}
+
+.events-skovhus__underline {
+    grid-area: underline;
+}
+
+.events-skovhus__text {
+    grid-area: text;
+}
+
+.events-menu-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". toggles toggles toggles toggles toggles toggles toggles toggles toggles toggles ."
+    ". menu menu menu menu menu menu menu menu menu menu .";
+}
+
+.events-menu-toggles {
+    grid-area: toggles;
+    margin: 1rem 0 0 0;
+    column-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+}
+
+.btn-red__skovhus, .btn-red__ice {
+    grid-column: span 2;
+    width: 100%;
+}
+
+.unfold__skovhus, .unfold__ice {
+    grid-area: menu;
+}
+
+
+.unfold__skovhus {
+    padding: 1rem;
+}
+
+.unfold-skovhus__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    margin: 0 3rem;
+}
+
+
+.events-menu-toggles {
+    margin: 1rem 0 0 0;
+}
+
+.btn-red__skovhus, .btn-red__ice {
+    margin: 1rem 0;
+}
+
+
+
+
 /* Oplevelser styling end */
 
 
 
 /* Møder og konferencer styling start */
+
+.meetings-hero-image {
+    background-image: url(../images/selskab-bryggeriet.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+.meetings {
+    width: calc(100vw - 19rem);
+    margin: 0 0 0 19rem;
+}
+
+.meetings__intro {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". heading heading heading heading . . . . . . ."
+    ". underline underline underline . . . . . . . ."
+    ". text text text text . . . . . . .";
+}
+
+.meetings-intro__heading {
+    grid-area: heading;
+}
+
+.meetings-intro__underline {
+    grid-area: underline;
+}
+
+.meetings-intro__text {
+    grid-area: text;
+}
+
+.meetings__packages {
+    margin: 3rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    column-gap: 2rem;
+    grid-template-areas: 
+    ". heading heading heading heading . img img img img img ."
+    ". underline underline underline underline . img img img img img ."
+    ". text text text text . img img img img img ."
+    ". . . . . . img img img img img ."
+    ;
+}
+
+.meetings-packages__img {
+    width: 100%;
+    grid-area: img;
+    margin-bottom: 0;
+}
+
+.meetings-packages__heading {
+    grid-area: heading;
+}
+
+.meetings-packages__underline {
+    grid-area: underline;
+}
+
+.meetings-packages__text {
+    grid-area: text;
+}
+
+.unfold__early-meetings, .unfold__day-meetings, .unfold__allday-meetings, .unfold__extras-meetings {
+    padding: 1rem;
+    grid-area: menu;
+}
+
+
+.unfold-extras-meetings__grid{
+    display: grid;
+    margin: 0 auto;
+    width: 50%;
+}
 
 /* Møder og konferencer styling end */
 
@@ -1467,11 +2765,137 @@ footer {
 
 /* Selskaber styling start */
 
+
+.parties-hero-image {
+    background-image: url(../images/selskab-bryggeriet.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+
+.parties {
+    width: calc(100vw - 19rem);
+    margin: 0 0 0 19rem;
+}
+
+.parties__intro, .parties__all-year {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". bread-crumb bread-crumb bread-crumb . . . . . . . ."
+    ". heading heading heading . . . . . . . ."
+    ". underline underline underline . . . . . . . ."
+    ". text text text text . . . . . . .";
+}
+
+.parties__all-year {
+    margin-top: 5rem;
+}
+
+.parties-intro__heading, .parties-intro__heading {
+    grid-area: heading;
+}
+
+.parties-intro__underline, .parties-intro__underline {
+    grid-area: underline;
+}
+
+.parties-intro__text, .parties-intro__text {
+    grid-area: text;
+}
+
+
+.parties__season {
+    margin: 3rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    ". heading heading heading heading . . img img img img ."
+    ". underline underline underline underline . . img img img img ."
+    ". text text text text . . img img img img ."
+    ". button-party-menu button-party-menu button-buffet button-buffet . . img img img img .";
+}
+
+.parties-season__img {
+    width: 100%;
+    grid-area: img;
+    margin-bottom: 1rem;
+}
+
+.parties-season__heading {
+    grid-area: heading;
+}
+
+.parties-season__underline {
+    grid-area: underline;
+}
+
+.parties-season__text {
+    grid-area: text;
+}
+
+.parties-season__button-party-menu {
+    width: 100%;
+    font-size: 1rem;
+    grid-area: button-party-menu;
+}
+
+.parties-season__button-buffet {
+    width: 100%;
+    font-size: 1rem;
+    grid-area: button-buffet;
+}
+
+.parties__checklist {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". heading heading heading . . . . . . . ."
+    ". underline underline underline . . . . . . . ."
+    ". checklist checklist checklist checklist checklist checklist checklist checklist checklist checklist .";
+}
+
+.parties-checklist__heading {
+    grid-area: heading;
+}
+
+.parties-checklist__underline {
+    grid-area: underline;
+}
+
+.parties-checklist__list {
+    grid-area: checklist;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.parties-party-menu-hero-image {
+    margin-bottom: 0;
+}
+
+.bread-crumb {
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+}
+
+
 /* Selskaber styling end */
 
 
 
 /* Selskabsmenu styling start */
+
+.parties-party-menu {
+    width: calc(100vw - 19rem);
+    margin: 0 0 0 19rem;
+}
 
 /* Selskabsmenu styling end */
 
@@ -1479,11 +2903,163 @@ footer {
 
 /* Buffet styling start */
 
+.buffet-menu-grid {
+    display: grid;
+    row-gap: 4rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". menu menu menu menu menu menu menu menu menu menu .";
+}
+
 /* Buffet styling end */
 
 
 
 /* Kontakt og info styling start */
+
+.contact-hero-image {
+    background-image: url(../images/bryggeri-skovlyst.jpg);
+}
+
+.contact-grid-container {
+    margin: 0 0 0 19rem;
+    display: grid;
+    row-gap: 4rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". intro intro intro intro . . . . . . ."
+    ". general general general general . . hours hours hours hours ."
+    ". giftcard giftcard giftcard giftcard . . job job job job .";
+}
+
+.contact-grid-container__intro {
+    grid-area: intro;
+}
+
+.contact-grid-container__contact {
+    grid-area: general;
+}
+
+.contact-mail-container, .contact-phone-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.contact-mail-container__img, .contact-phone-container__img {
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.contact-grid-container__hours {
+    grid-area: hours;
+}
+
+.contact-grid-container__giftcard {
+    grid-area: giftcard;
+}
+
+.contact-grid-container__job {
+    grid-area: job;
+}
+
+.contact-faq {
+    margin: 5rem 0 0 19rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". heading heading . . . . . . . . ."
+    ". underline underline . . . . . . . . ."
+    ". faq faq faq faq faq faq faq faq faq faq ."
+    ". . . . . button button . . . . .";
+}
+
+.contact-faq__caption {
+    grid-area: heading;
+}
+
+.contact-faq__underline {
+    grid-area: underline;
+}
+
+.faq-container {
+    grid-area: faq;
+    height: auto;
+    overflow: hidden;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.faq-container__faq {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-heading {
+    margin: 1.5rem 0 0.7rem 0;
+}
+
+.faq-button {
+    grid-area: button;
+    margin: 1.5rem auto;
+    font-size: 1rem;
+    padding: 0.5em 1.4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--color-primary);
+    border: none;
+    outline: 0.1rem solid var(--color-primary);
+    cursor: pointer;
+    font-family: var(--font-heading);
+    color: var(--color-white);
+}
+
+.unfold-faq {
+    height: auto;
+}
+
+.less-faqs {
+    display: none;
+}
+
+.faq-hide {
+    display: none;
+}
+
+.faq-show {
+    display: flex;
+}
+
+.faq-mobile-hide {
+    display: flex;
+}
+
+
+
+.contact__hours-hours {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0.2rem 0;
+}
+
+.contact-grid-container-hours__open {
+    margin-top: 1.5rem;
+}
+
+.contact-grid-container-hours__kitchen {
+    margin: 1rem 0;
+}
+
+.contact-grid-container-hours__night {
+    margin-top: 1rem;
+}
 
 /* Kontakt og info styling end */
 
@@ -1537,6 +3113,330 @@ footer {
 
 
 /* Booking styling start */
+
+.booking {
+    margin: 5rem 0 0 19rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". heading heading heading . . . . . . . ."
+    ". underline underline underline . . . . . . . ."
+    ". . . calender calender calender calender calender calender . . .";
+}
+
+.booking__heading {
+    grid-area: heading;
+}
+
+.booking__underline {
+    grid-area: underline;
+}
+
+.calender {
+    grid-area: calender;
+    width: 100%;
+    margin: 1rem 0;
+    border: 0.15rem solid var(--color-secondary);
+    font-family: var(--font-text);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.calender-right__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.calender__dropdown {
+    margin-top: 1rem;
+    width: 100%;
+    border: 2px solid var(--color-primary);
+    overflow: hidden;
+    position: relative;
+}
+
+
+.calender__dropdown-box {
+    width: 0;
+    position: relative;
+    height: 0;
+    margin-bottom: 1rem;
+}
+
+.calender__dropdown-box:after {
+    content: '';
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    transform: rotate(135deg);
+    width: 0.8rem;
+    height: 0.8rem;
+    right: 2.7rem;
+    top: 1.4rem;
+    position: absolute;
+}
+
+.calender__dropdown-box:before {
+    content: '';
+    background-color: var(--color-primary);
+    width: 2.5rem;
+    height: 2rem;
+    right: 2rem;
+    top: 1.1rem;
+    position: absolute;
+}
+
+.calender-dropdown__selector {
+    width: 100%;
+    color: var(--color-black);
+    padding: 0.3rem;
+    font-family: var(--font-text);
+    font-size: 1rem;
+    border: none;
+}
+
+
+.calender-dropdown__label {
+    position:relative;
+    width: 20rem;
+}
+
+
+
+
+.calender-dropdown__selector {
+    width: 100%;
+}
+
+
+.calender-sub-heading {
+    color: var(--color-secondary);
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+.calender-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 0 0 0;
+    width: 100%;
+}
+
+.calender-month {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.calender__month-btn {
+    width: 2rem;
+    height: 2rem;
+}
+
+.delivery-next-month {
+    
+}
+
+.calender__prev-month {
+    margin-top: 0.1rem;
+    transform: rotate(180deg);
+}
+
+.calender-days {
+    gap: 0.1rem;
+    row-gap: 0.3rem;
+    margin: 1.3rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "mon tue wed thur fri sat sun"
+    ". date1 date2 date3 date4 date5 date6"
+    "date7 date8 date9 date10 date11 date12 date13"
+    "date14 date15 date16 date17 date18 date19 date20"
+    "date21 date22 date23 date24 date25 date26 date27"
+    "date28 date29 date30 . . . .";
+}
+
+.calender-days > p {
+    font-size: 0.9rem;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+.calender-weekdays {
+    color: var(--color-secondary);
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+.date {
+    color: var(--color-secondary);
+    padding: 0.4rem;
+    cursor: pointer;
+    background-color: #EBEBEB;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+}
+
+.delivery-date {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    font-weight: 500;
+}
+
+.monday {
+    grid-area: mon;
+}
+.tuesday {
+    grid-area: tue;
+}
+.wednesday {
+    grid-area: wed;
+}
+.thursday {
+    grid-area: thur;
+}
+.friday {
+    grid-area: fri;
+}
+.saturday {
+    grid-area: sat;
+}
+.sunday {
+    grid-area: sun;
+}
+.date1 {
+    grid-area: date1;
+}
+.date2 {
+    grid-area: date2;
+}
+.date3 {
+    grid-area: date3;
+}
+.date4 {
+    grid-area: date4;
+}
+.date5 {
+    grid-area: date5;
+}
+.date6 {
+    grid-area: date6;
+}
+.date7 {
+    grid-area: date7;
+}
+.date8 {
+    grid-area: date8;
+}
+.date9 {
+    grid-area: date9;
+}
+.date10 {
+    grid-area: date10;
+}
+.date11 {
+    grid-area: date11;
+}
+.date12 {
+    grid-area: date12;
+}
+.date13 {
+    grid-area: date13;
+}
+.date14 {
+    grid-area: date14;
+}
+.date15 {
+    grid-area: date15;
+}
+.date16 {
+    grid-area: date16;
+}
+.date17 {
+    grid-area: date17;
+}
+.date18 {
+    grid-area: date18;
+}
+.date19 {
+    grid-area: date19;
+}
+.date20 {
+    grid-area: date20;
+}
+.date21 {
+    grid-area: date21;
+}
+.date22 {
+    grid-area: date22;
+}
+.date23 {
+    grid-area: date23;
+}
+.date24 {
+    grid-area: date24;
+}
+.date25 {
+    grid-area: date25;
+}
+.date26 {
+    grid-area: date26;
+}
+.date27 {
+    grid-area: date27;
+}
+.date28 {
+    grid-area: date28;
+}
+.date29 {
+    grid-area: date29;
+}
+.date30 {
+    grid-area: date30;
+}
+
+.calender-time {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.time {
+    display: block;
+    background-color: #EBEBEB;
+    color: var(--color-secondary);
+    border-radius: 0.2rem;
+}
+
+.calender-button {
+    margin: 2rem auto 0 auto;
+    text-align: center;
+    width: 100%;
+    padding: 0.5em 0;
+    font-size: 1rem;
+    background-color: var(--color-primary);
+    border: none;
+    outline: 0.1rem solid var(--color-primary);
+    cursor: pointer;
+    font-family: var(--font-text);
+    color: var(--color-white);
+}
 
 /* Booking styling end */
     
