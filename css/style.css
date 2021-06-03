@@ -326,7 +326,8 @@ body {
 }
 
 .btn__global-styling:hover .btn__text-container .btn__text {
-    color: #fff;
+    color: var(--color-white);
+    font-family: var(--font-heading);
 }
 
 .btn__global-styling-gold {
@@ -339,6 +340,8 @@ body {
     border: none;
     outline: 0.1rem solid #c8a374;
     cursor: pointer;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
 }
 
 .btn__leaf-container-gold {
@@ -2141,7 +2144,7 @@ footer {
     grid-template-rows: auto;
 }
 
-.btn-red__lunch, .btn-red__dinner, .btn-red__children, .btn-red__drinks, .btn-red__first , .btn-red__second, .btn-red__third, .btn-red__fourth {
+.btn-red__lunch, .btn-red__dinner, .btn-red__children, .btn-red__drinks, .btn-red__first , .btn-red__second, .btn-red__third, .btn-red__fourth, .btn-red__fifth {
     grid-column: span 2;
     width: 100%
 }
@@ -2774,7 +2777,7 @@ footer {
     margin: 0 0 0 19rem;
 }
 
-.parties__intro {
+.parties__intro, .parties__all-year {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
@@ -2785,15 +2788,19 @@ footer {
     ". text text text text . . . . . . .";
 }
 
-.parties-intro__heading {
+.parties__all-year {
+    margin-top: 5rem;
+}
+
+.parties-intro__heading, .parties-intro__heading {
     grid-area: heading;
 }
 
-.parties-intro__underline {
+.parties-intro__underline, .parties-intro__underline {
     grid-area: underline;
 }
 
-.parties-intro__text {
+.parties-intro__text, .parties-intro__text {
     grid-area: text;
 }
 
@@ -2832,13 +2839,13 @@ footer {
 
 .parties-season__button-party-menu {
     width: 100%;
-    font-size: 0.7rem;
+    font-size: 1rem;
     grid-area: button-party-menu;
 }
 
 .parties-season__button-buffet {
     width: 100%;
-    font-size: 0.7rem;
+    font-size: 1rem;
     grid-area: button-buffet;
 }
 
