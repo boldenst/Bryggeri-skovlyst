@@ -1230,6 +1230,21 @@ footer {
 
 /* Buffet styling start */
 
+.sub-global-grid {
+    display: grid;
+    padding-top: 2rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "dishes dishes dishes dishes dishes dishes dishes dishes dishes dishes"
+    ". . . . . . . . btn btn"
+    ;
+}
+
+.sub-global-menu {
+    grid-area: dishes;
+}
+
 /* Buffet styling end */
 
 
