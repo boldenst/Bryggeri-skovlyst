@@ -643,7 +643,7 @@ footer {
 
 /* Forside styling start */
 .main-hero-image {
-    background-color: pink;
+    background-image: url(../images/bryggeri-skovlyst.jpg);
     padding-top: 2rem;
 }
 
@@ -1944,8 +1944,14 @@ footer {
     margin-left: 19rem;
 }
 
+.main-hero-image {
+    margin-left: 19rem;
+}
+
 .main-hero-image__grid-wrap {
     margin-top: 2rem;
+    margin-left: 0;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
@@ -1965,7 +1971,6 @@ footer {
 .text-centered {
     text-align: left;
     margin: 0;
-    width: 25rem;
 }
 
 .text--white {
