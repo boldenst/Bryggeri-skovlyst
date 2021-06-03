@@ -10,7 +10,6 @@ $("#burger-close").click(function(){
   });
 // Burger menu funktioner slut
 
-
 // Funktioner til menukortene
 // Denne toggler class på den man trykker på, for at vise det pågældende menukort
 // Og fjerne classes på alle de andre
