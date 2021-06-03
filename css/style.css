@@ -1715,6 +1715,15 @@ footer {
 
 @media only screen and (min-width: 700px) {
 
+    body {
+        overflow-x: hidden;
+        background-color: var(--color-white);
+        background-image: url(../images/graphics/blomster-global1.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
 /* Header styling start ---------------------------------*/
 .mobile__header {
     display: none;
@@ -1999,6 +2008,14 @@ footer {
     margin: 0;
     position: relative;
     top: 1.45rem;
+}
+
+.index-about-btn-container {
+    display: flex;
+}
+
+.index-about-btn-container a {
+    margin-right: 1rem;
 }
 
 .main__wrapper {
@@ -2664,10 +2681,23 @@ footer {
 
 .unfold-skovhus__grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 2rem;
-    margin: 0 3rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". left left left left right right right right ."
+    ". . . . . . . . btn .";
+    column-gap: 3rem;
+    margin: 0 1rem;
 }
+
+.skovhus-menu--right {
+    grid-area: right;
+}
+
+.skovhus-menu--left {
+    grid-area: left;
+}
+
 
 
 .events-menu-toggles {
@@ -2676,6 +2706,10 @@ footer {
 
 .btn-red__skovhus, .btn-red__ice {
     margin: 1rem 0;
+}
+
+.skovhus-download {
+    justify-self: flex-end;
 }
 
 
