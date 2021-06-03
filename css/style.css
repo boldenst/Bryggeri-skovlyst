@@ -1246,6 +1246,8 @@ footer {
 
 .sub-global-menu {
     grid-area: dishes;
+    width: 50%;
+    margin: 0 auto;
 }
 
 /* Buffet styling end */
