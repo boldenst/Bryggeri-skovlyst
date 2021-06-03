@@ -122,7 +122,74 @@ body {
 
 /* Aside styling end -----------------------------------*/
 
+/* Fixed button start -----------------------------------*/
 
+.fixed-btn__container {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 8.5rem;
+    justify-content: space-between;
+    z-index: 109;
+}
+
+.fixed-btn__book {
+    display: flex;
+    text-align: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 0.7rem;
+    color: var(--color-white);
+    font-size: 1.1rem;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+}
+
+.fixed-btn__up {
+    display: flex;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--color-white);
+    border-radius: 0.7rem;
+    color: var(--color-white);
+    border: 0.3rem solid var(--color-secondary);
+    font-size: 1.3rem;
+}
+
+.up-arrow {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+}
+
+.up-arrow::before {
+    content: '';
+    position: relative;
+    top: 0.85rem;
+    left: 1.55rem;
+    width: 0.3rem;
+    height: 2rem;
+    background-color: var(--color-secondary);
+}
+
+.up-arrow::after {
+    content: '';
+    position: relative;
+    top: 0.8rem;
+    left: 0.7rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    border-top:0.3rem solid var(--color-secondary);
+    border-right:0.3rem solid var(--color-secondary);
+    transform: rotate(-45deg);
+}
+
+/* Fixed button end -----------------------------------*/
 
 /* Menu styling start ---------------------------------*/
 
@@ -1749,6 +1816,13 @@ footer {
 
 /* Aside styling end -----------------------------------*/
 
+/* Fixed button start -----------------------------------*/
+
+.fixed-btn__container {
+    display: none;
+}
+
+/* Fixed button end -----------------------------------*/
 
 
 /* Menu styling start ---------------------------------*/
