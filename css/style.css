@@ -1797,27 +1797,27 @@ footer {
 
 /* Buttons styling start ---------------------------------*/
 
-.btn-red__lunch--desktop-first {
+.btn-red__lunch--desktop-first, .unfold__open--desktop-first {
     background-color: #fff;
     outline: 0.1rem solid #c8a374;
 }
 
-.unfold__lunch--desktop-first {
+.unfold__lunch--desktop-first, .unfold__open--desktop-first {
     display: block;
 }
 
-.btn-red__lunch-text--desktop-first {
+.btn-red__lunch-text--desktop-first, .btn-red__open-text--desktop-first {
     color: #c8a374;
 }
 
-.btn-red__lunch-arrow-container--desktop-first {
+.btn-red__lunch-arrow-container--desktop-first, .btn-red__open-arrow-container--desktop-first {
     width: 2rem;
     height: 2rem;
     float: right;
     background-color: #fff;
 }
 
-.btn-red__lunch-arrow--desktop-first {
+.btn-red__lunch-arrow--desktop-first, .btn-red__open-arrow--desktop-first {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1838,7 +1838,7 @@ footer {
     }
 }
 
-.btn-red__lunch-arrow--desktop-first::before {
+.btn-red__lunch-arrow--desktop-first::before, .btn-red__open-arrow--desktop-first::before {
     content: '';
     position: absolute;
     width: 1rem;
@@ -1849,7 +1849,7 @@ footer {
     margin-left: 0.25rem;
 }
 
-.btn-red__lunch-arrow--desktop-first::after {
+.btn-red__lunch-arrow--desktop-first::after, .btn-red__open-arrow--desktop-first::after {
     content: '';
     position: absolute;
     width: 1rem;
@@ -2099,7 +2099,7 @@ footer {
     grid-template-rows: auto;
 }
 
-.btn-red__lunch, .btn-red__dinner, .btn-red__children, .btn-red__drinks {
+.btn-red__lunch, .btn-red__dinner, .btn-red__children, .btn-red__drinks, .btn-red__first , .btn-red__second, .btn-red__third, .btn-red__fourth {
     grid-column: span 2;
     width: 100%
 }
