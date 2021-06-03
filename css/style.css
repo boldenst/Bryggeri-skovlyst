@@ -809,7 +809,9 @@ footer {
 
 /* Menukort styling start */
 .menu-hero-image {
-    background-image: url(../images/oel-hero.jpg);
+    background-image: url(../images/selskab-bryggeriet-mad.jpg);
+    background-size: 200%;
+    background-position: 40% 60%;
 }
 
 .menu-info-container {
@@ -908,7 +910,7 @@ footer {
 
 
 /* Øl styling start */
-.menu-hero-image {
+.oel-hero-image {
     background-image: url(../images/oel-hero.jpg);
 }
 
@@ -1060,7 +1062,7 @@ footer {
 
 /* Oplevelser styling start */
 .events-hero-image {
-    background-image: url(../images/selskab-bryggeriet.jpg);
+    background-image: url(../images/oplevelser-cover.jpg);
     background-size: 100%;
     background-position: bottom center;
 }
@@ -1116,9 +1118,9 @@ footer {
 /* Møder og konferencer styling start */
 
 .meetings-hero-image {
-    background-image: url(../images/selskab-bryggeriet.jpg);
-    background-size: 100%;
-    background-position: bottom center;
+    background-image: url(../images/moeder-og-konferencer-cover.jpg);
+    background-size: 120%;
+    background-position: 50% 70%;
 }
 
 .meetings-packages__img {
@@ -1191,9 +1193,9 @@ footer {
 /* Selskaber styling start */
 
 .parties-hero-image {
-    background-image: url(../images/selskab-bryggeriet.jpg);
+    background-image: url(../images/selskab-forside.jpg);
     background-size: 100%;
-    background-position: bottom center;
+    background-position: center;
 }
 
 .parties {
@@ -1284,8 +1286,10 @@ footer {
 /* Selskabsmenu styling start */
 
 .parties-party-menu-hero-image {
-   background-image: url(../images/bryggeri-skovlyst.jpg);
+   background-image: url(../images/selskab-forside.jpg);
    margin: 0; 
+   background-size: 100%;
+   background-position: center;
 }
 
 .parties-party-menu {
@@ -1323,7 +1327,9 @@ footer {
 /* Kontakt og info styling start */
 
 .contact-hero-image {
-    background-image: url(../images/bryggeri-skovlyst.jpg);
+    background-image: url(../images/praktisk-info-cover.jpg);
+    background-size: 100%;
+    background-position: center;
 }
 
 .contact-grid-container {
@@ -1451,7 +1457,9 @@ footer {
 
 /* Vores historie styling start */
 .history-hero-image {
-    background-image: url(../images/bryggeri-skovlyst.jpg);
+    background-image: url(../images/historie-cover.jpg);
+    background-size: 100%;
+    background-position: center;
 }
 
 .history-container__image {
@@ -1780,7 +1788,7 @@ footer {
 /* Booking styling end */
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1200px) {
 
     body {
         overflow-x: hidden;
@@ -2796,9 +2804,9 @@ footer {
 /* Møder og konferencer styling start */
 
 .meetings-hero-image {
-    background-image: url(../images/selskab-bryggeriet.jpg);
+    background-image: url(../images/moeder-og-konferencer-cover.jpg);
     background-size: 100%;
-    background-position: center;
+    background-position: 50% 65%;
 }
 
 .meetings {
@@ -2992,6 +3000,8 @@ footer {
 
 .parties-party-menu-hero-image {
     margin-bottom: 0;
+    background-size: 100%;
+    background-position: 50% 25%;
 }
 
 .bread-crumb {
@@ -3181,7 +3191,9 @@ footer {
 
 /* Vores historie styling start */
 .history-hero-image {
-    background-image: url(../images/bryggeri-skovlyst.jpg);
+    background-image: url(../images/historie-cover.jpg);
+    background-size: 100%;
+    background-position: 50% 60%;
 }
 
 .history-container__image {
