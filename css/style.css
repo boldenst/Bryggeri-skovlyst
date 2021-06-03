@@ -418,6 +418,7 @@ body {
     height: 2rem;
     float: right;
     background-color: #fff;
+    overflow: hidden;
 }
 
 .btn-red__arrow {
@@ -741,19 +742,37 @@ footer {
     background-image: url(../images/oel-hero.jpg);
 }
 
-.menu-grid-container {
-    margin-top: 4rem;
-    margin: 0 2rem;
+.menu-info-container {
+    grid-area: info;
+    margin: 0;
     display: grid;
-    row-gap: 4rem;
+    row-gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
+    "head head head head"
     "menu-info menu-info menu-info menu-info"
     "menu-cont menu-cont menu-cont menu-cont"
     "opening opening opening opening"
     ;
 }
+
+.menu-grid-container {
+    display: grid;
+    margin: 0 2rem;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "info info info info"
+    "menu-cont menu-cont menu-cont menu-cont"
+    ;
+}
+
+.menu-info__heading {
+    grid-area: head;
+}
+
 
 .menu-info-container__left {
     grid-area: menu-info;
@@ -771,6 +790,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2rem;
+}
+
+.unfold-global__container, .unfold-dinner__container, .unfold-children__container, .unfold-drinks__container {
+    padding: 1rem;
 }
 
 .unfold-lunch__dishes {
@@ -1205,6 +1229,21 @@ footer {
 
 
 /* Buffet styling start */
+
+.sub-global-grid {
+    display: grid;
+    padding-top: 2rem;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "dishes dishes dishes dishes dishes dishes dishes dishes dishes dishes"
+    ". . . . . . . . btn btn"
+    ;
+}
+
+.sub-global-menu {
+    grid-area: dishes;
+}
 
 /* Buffet styling end */
 
@@ -2043,18 +2082,19 @@ footer {
 }
 
 .menu-info-container {
+    margin-bottom: 2rem;
     grid-area: info;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
-    "menu-head menu-head menu-head menu-head menu-head menu-head menu-head menu-head menu-head menu-head"
+    "head head head head head head head head head head"
     "info-l info-l info-l info-l info-l info-l . info-r info-r info-r"
     ;
 }
 
 .menu-info__heading {
-    grid-area: menu-head;
+    grid-area: head;
 }
 
 .menu-info-container__left {
@@ -2853,6 +2893,15 @@ footer {
 
 
 /* Buffet styling start */
+
+.buffet-menu-grid {
+    display: grid;
+    row-gap: 4rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". menu menu menu menu menu menu menu menu menu menu .";
+}
 
 /* Buffet styling end */
 
